@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_coup",
+    "texture": "4e049ee7-adf2-496b-810e-311101c9fc43",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      508,
+      214
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      508,
+      214
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

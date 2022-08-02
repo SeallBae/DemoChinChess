@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_giaidau",
+    "texture": "b0ba7a40-2c35-4bbc-b431-154e9630125a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      508,
+      214
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      508,
+      214
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

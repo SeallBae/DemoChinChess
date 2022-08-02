@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "o_truot",
+    "texture": "b2d93b1e-c7be-4c8e-a3b6-bb3cde749a22",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      202
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

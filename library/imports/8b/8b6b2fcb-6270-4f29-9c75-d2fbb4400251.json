@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ban-vang-1",
+    "texture": "c3b5fc6f-5462-460d-a16e-d7c041c74995",
+    "atlas": "",
+    "rect": [
+      21,
+      3,
+      423,
+      506
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      465,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_sandautinhanh",
+    "texture": "f7afdbca-c964-404e-adea-dd0aa4c3bc28",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      161
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

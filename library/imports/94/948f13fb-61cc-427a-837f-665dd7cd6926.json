@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "collapse-32",
+    "texture": "5a8f4b7b-bd69-4149-9f9f-13b52d296bf1",
+    "atlas": "",
+    "rect": [
+      3,
+      7,
+      26,
+      15
+    ],
+    "offset": [
+      0,
+      1.5
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

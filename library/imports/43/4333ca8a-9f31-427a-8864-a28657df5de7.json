@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_chon-xephang",
+    "texture": "effc2fe1-c630-412e-bbc1-534433b04c7a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      78
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

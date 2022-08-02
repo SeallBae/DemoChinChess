@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_chatext",
+    "texture": "3fa874b0-1ae6-448c-9112-15253c1ef540",
+    "atlas": "",
+    "rect": [
+      1,
+      5,
+      137,
+      118
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      138,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "an_quan_comp",
+    "texture": "af61ccd5-ff07-4354-af8c-a68b765c587c",
+    "atlas": "",
+    "rect": [
+      0,
+      24,
+      2039,
+      525
+    ],
+    "offset": [
+      -4.5,
+      -12
+    ],
+    "originalSize": [
+      2048,
+      549
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

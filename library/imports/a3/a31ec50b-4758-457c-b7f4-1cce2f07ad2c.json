@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "banda-3",
+    "texture": "ece56313-db44-4860-8b3a-5d9fe2d94313",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      422,
+      511
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      422,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

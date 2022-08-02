@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "o_themluot",
+    "texture": "049bee45-9ed4-48f6-9766-d4cc1279ff47",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      202
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pawnRed",
+    "texture": "0bf554ae-9f2f-4b13-b69e-66e2931b7a9f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      122,
+      121
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      122,
+      121
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

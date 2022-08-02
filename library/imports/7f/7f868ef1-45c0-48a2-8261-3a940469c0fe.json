@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ic_launcher",
+    "texture": "1f932753-0b67-4bfc-b604-e0de3baa3d5a",
+    "atlas": "",
+    "rect": [
+      12,
+      12,
+      120,
+      124
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      144,
+      144
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

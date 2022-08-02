@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rookRed",
+    "texture": "1d0c06c5-bd6f-48f8-9ff0-c3b6a9545510",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      122,
+      121
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      122,
+      121
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "stompy_white_128",
+    "texture": "03c99dda-6922-44ee-9d9b-07f62ffe6ea4",
+    "atlas": "",
+    "rect": [
+      5,
+      2,
+      97,
+      94
+    ],
+    "offset": [
+      2.5,
+      2
+    ],
+    "originalSize": [
+      102,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

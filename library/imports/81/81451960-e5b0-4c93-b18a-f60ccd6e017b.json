@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ban-go-2",
+    "texture": "ab0a3032-1797-4927-ba77-53718dbec145",
+    "atlas": "",
+    "rect": [
+      21,
+      3,
+      423,
+      507
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      465,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

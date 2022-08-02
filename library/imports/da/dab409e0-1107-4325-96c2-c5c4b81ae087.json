@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn-doiten",
+    "texture": "5976e6e6-6cb8-4fcf-974c-f5adc1c8f48a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      79
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      79
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

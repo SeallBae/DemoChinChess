@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "menu-32",
+    "texture": "dc768449-0f49-42d4-8260-d1393f199f54",
+    "atlas": "",
+    "rect": [
+      0,
+      4,
+      32,
+      24
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      32,
+      32
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "logogtv",
+    "texture": "60f7a7ac-8a68-4467-973c-a6b30c7c595d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      289,
+      125
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      289,
+      125
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

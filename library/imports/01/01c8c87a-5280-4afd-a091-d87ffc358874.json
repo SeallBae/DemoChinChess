@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_sandau20phut",
+    "texture": "79b01e5d-f6ee-49ea-898d-ed29ad75de4f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      161
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

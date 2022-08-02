@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_facebook",
+    "texture": "aed7811d-158c-4598-b4d4-e5e07886e76f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      592,
+      178
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      592,
+      178
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

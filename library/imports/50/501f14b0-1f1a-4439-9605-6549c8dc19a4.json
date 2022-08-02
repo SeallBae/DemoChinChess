@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_mua",
+    "texture": "141644df-a23a-4593-91cd-3ab20687f3e0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      305,
+      115
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      305,
+      115
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

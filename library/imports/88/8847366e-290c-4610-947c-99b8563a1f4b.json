@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "label_dangky",
+    "texture": "80c577c1-6baa-4caf-8042-ea9bcfd1242e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      407,
+      361
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      407,
+      361
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

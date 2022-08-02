@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "DemoChineseChess",
+  "id": "c673d991-7444-4c07-b158-bbf57765fea6",
+  "version": "2.4.9",
+  "isNew": false
+}

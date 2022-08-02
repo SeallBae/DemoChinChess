@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bat_dau_comp",
+    "texture": "beaa2471-1b0a-414e-810e-68c487bab5fc",
+    "atlas": "",
+    "rect": [
+      0,
+      24,
+      2039,
+      522
+    ],
+    "offset": [
+      -4.5,
+      -10.5
+    ],
+    "originalSize": [
+      2048,
+      549
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

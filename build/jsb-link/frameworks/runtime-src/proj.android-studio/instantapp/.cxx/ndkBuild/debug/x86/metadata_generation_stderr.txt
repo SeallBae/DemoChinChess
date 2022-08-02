@@ -1,0 +1,1 @@
+D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/jni/../../jni/CocosAndroid.mk:23: *** Android NDK: Aborting.    .  Stop.

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "popup-avatar",
+    "texture": "8ea0e0a7-83dd-480e-989b-c27573b76136",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      576,
+      1024
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      576,
+      1024
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

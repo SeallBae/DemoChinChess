@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_chon",
+    "texture": "550d3fcd-17d1-4f65-9af3-bd3ab111c9c5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      598,
+      102
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      598,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "graph-bars-icon-600w-706187455",
+    "texture": "e1cfd99f-4c9d-40ce-9e72-6f62ac2fe05c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      600,
+      620
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      600,
+      620
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "banvang-1",
+    "texture": "8f9c3ccd-9c2f-4a88-8102-e44c9ee4ebc8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      422,
+      511
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      422,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

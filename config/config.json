@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "plusadmin",
+    "password": "Plusadmin@2020",
+    "database": "plusadmintest1",
+    "host": "35.213.160.139",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "plusadmin",
+    "password": "Plusadmin@2020",
+    "database": "plusadmintest1",
+    "host": "35.213.160.139",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "plusadmin",
+    "password": "Plusadmin@2020",
+    "database": "plusadmintest1",
+    "host": "35.213.160.139",
+    "dialect": "mysql"
+  }
+}

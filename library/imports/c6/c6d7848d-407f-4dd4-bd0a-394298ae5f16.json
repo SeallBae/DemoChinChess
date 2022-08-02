@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_returnmail",
+    "texture": "3cf1b538-9e6a-4534-9478-815b417f583d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      108,
+      93
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      93
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

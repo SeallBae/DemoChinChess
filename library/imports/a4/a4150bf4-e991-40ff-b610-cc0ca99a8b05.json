@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon_bac",
+    "texture": "84867e1a-76cc-4b6a-88f5-8325e735b79b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      142,
+      79
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      142,
+      79
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rookBlack",
+    "texture": "e91a762e-9170-4fd3-928d-a0c9bd1211b6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      106,
+      105
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      106,
+      105
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

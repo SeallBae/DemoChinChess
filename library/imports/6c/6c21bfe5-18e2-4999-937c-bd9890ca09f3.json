@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "noidungthu",
+    "texture": "d584d3b7-8e43-40af-b8b2-e3a448fb4e94",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      366,
+      512
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      366,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

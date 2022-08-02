@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_vuotai",
+    "texture": "a6c9c296-cf2d-4c6a-87fd-37d6cc5b4a1c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      161
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

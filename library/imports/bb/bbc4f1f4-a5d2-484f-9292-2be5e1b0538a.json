@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bango-2",
+    "texture": "32531422-7db0-47ed-86cb-3dc1665f39df",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      422,
+      511
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      422,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

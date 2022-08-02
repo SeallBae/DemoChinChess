@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_sandau5phut",
+    "texture": "df688583-8949-4315-9630-d8f6dc6425b6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      161
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

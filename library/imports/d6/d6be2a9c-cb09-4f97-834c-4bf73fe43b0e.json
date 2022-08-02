@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_sandaudaisu",
+    "texture": "6e28b799-5eac-4dbb-85b3-f56de45a18d2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      161
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon_hoa",
+    "texture": "7b8df726-fa7d-49d0-b83a-1e0a6026377e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      105,
+      81
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      105,
+      81
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

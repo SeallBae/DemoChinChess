@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "go-3-thumb",
+    "texture": "ab3c5cbe-3d69-4fcc-b990-820a9ae12ab3",
+    "atlas": "",
+    "rect": [
+      5,
+      0,
+      222,
+      255
+    ],
+    "offset": [
+      -0.5,
+      0.5
+    ],
+    "originalSize": [
+      233,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

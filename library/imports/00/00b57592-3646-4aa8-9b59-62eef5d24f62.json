@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "footer_lodyas",
+    "texture": "8e8576e9-4cc4-4aec-b19e-d37a0ddfb8c9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      204
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      204
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

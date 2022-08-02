@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_ketban",
+    "texture": "e9cd1755-ae13-46d5-9566-1eded585eaf9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      251,
+      95
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      251,
+      95
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

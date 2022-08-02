@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "heart_monitor-64",
+    "texture": "d92c0352-2878-47a4-bc9b-4cea6c053a89",
+    "atlas": "",
+    "rect": [
+      0,
+      5,
+      64,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "da-3-thumb",
+    "texture": "307f75c3-e9e8-49c0-baf9-08221ad21b0f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      233,
+      255
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      233,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

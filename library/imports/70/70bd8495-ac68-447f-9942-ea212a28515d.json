@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chieu_comp",
+    "texture": "396b4703-5e08-4ec2-97f5-dd9f5e6cee5c",
+    "atlas": "",
+    "rect": [
+      0,
+      7,
+      1024,
+      618
+    ],
+    "offset": [
+      0,
+      -3.5
+    ],
+    "originalSize": [
+      1024,
+      625
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

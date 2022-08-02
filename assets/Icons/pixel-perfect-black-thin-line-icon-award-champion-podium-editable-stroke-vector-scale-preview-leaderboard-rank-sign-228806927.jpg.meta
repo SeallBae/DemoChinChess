@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "503ee665-f673-407f-bf00-79267947a8e2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 800,
+  "height": 800,
+  "platformSettings": {},
+  "subMetas": {
+    "pixel-perfect-black-thin-line-icon-award-champion-podium-editable-stroke-vector-scale-preview-leaderboard-rank-sign-228806927": {
+      "ver": "1.0.6",
+      "uuid": "4a11b630-741f-4284-a9ad-aa106aaf6d02",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "503ee665-f673-407f-bf00-79267947a8e2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 800,
+      "height": 800,
+      "rawWidth": 800,
+      "rawHeight": 800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

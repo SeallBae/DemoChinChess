@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_bo qua",
+    "texture": "2bcbd75e-d4b6-4daf-8cb6-1eda82c52647",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

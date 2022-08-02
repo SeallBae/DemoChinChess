@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_chon",
+    "texture": "24a22575-5867-4ed3-bbf8-e5506ce062ef",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      317,
+      115
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      317,
+      115
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

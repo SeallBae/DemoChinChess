@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "label_thanhtich",
+    "texture": "0adff359-f270-4a03-bd7b-da92622aacc7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      828,
+      82
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      828,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

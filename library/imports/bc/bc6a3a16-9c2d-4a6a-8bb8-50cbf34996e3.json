@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_choingay",
+    "texture": "48ee8af1-eeac-44f2-876b-03646ce8cd80",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      592,
+      178
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      592,
+      178
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

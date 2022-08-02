@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pixel-perfect-black-thin-line-icon-award-champion-podium-editable-stroke-vector-scale-preview-leaderboard-rank-sign-228806927",
+    "texture": "503ee665-f673-407f-bf00-79267947a8e2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      800,
+      800
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      800,
+      800
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

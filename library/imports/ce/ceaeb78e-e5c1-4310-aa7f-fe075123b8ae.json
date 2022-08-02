@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_xinthua",
+    "texture": "5520586b-c007-4200-8675-cae8bdc2277c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      132,
+      131
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      132,
+      131
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "circulo-rojo-png-6",
+    "texture": "d6b23a8b-b5e8-47a3-9f51-9941574bec1b",
+    "atlas": "",
+    "rect": [
+      15,
+      15,
+      485,
+      485
+    ],
+    "offset": [
+      1.5,
+      -1.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

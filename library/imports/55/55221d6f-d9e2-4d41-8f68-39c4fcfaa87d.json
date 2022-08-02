@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "san_sang_comp",
+    "texture": "ea387a7b-0dd7-40dd-89fe-c96ee6e56735",
+    "atlas": "",
+    "rect": [
+      0,
+      24,
+      2039,
+      523
+    ],
+    "offset": [
+      -4.5,
+      -11
+    ],
+    "originalSize": [
+      2048,
+      549
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

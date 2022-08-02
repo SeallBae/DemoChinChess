@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bancogo",
+    "texture": "5e9d111f-41ac-45de-a990-96d73a3d7939",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      844,
+      1024
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      844,
+      1024
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "vang-3-thumb",
+    "texture": "6cfbe444-a706-4d01-831b-c09eceeb3b63",
+    "atlas": "",
+    "rect": [
+      5,
+      0,
+      221,
+      256
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      233,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

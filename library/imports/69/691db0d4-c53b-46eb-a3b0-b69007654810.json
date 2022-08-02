@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_hide",
+    "texture": "5164b6bf-f66e-4530-b11d-8c674a2cd3d4",
+    "atlas": "",
+    "rect": [
+      0,
+      4,
+      76,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      76,
+      59
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

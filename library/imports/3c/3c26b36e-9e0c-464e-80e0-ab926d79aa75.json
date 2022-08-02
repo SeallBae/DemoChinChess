@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_nhapten",
+    "texture": "90306ee7-aeda-48e2-abb3-dc9117a0e989",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      512,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      78
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

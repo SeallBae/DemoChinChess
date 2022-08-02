@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_nhiemvu",
+    "texture": "ab7c0483-62d3-4891-8dba-ee251cf2e34a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      508,
+      214
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      508,
+      214
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

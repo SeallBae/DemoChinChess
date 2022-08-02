@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_dangky",
+    "texture": "6187b725-10a6-43b8-8ec3-813dedb32b6c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      420,
+      129
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      420,
+      129
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

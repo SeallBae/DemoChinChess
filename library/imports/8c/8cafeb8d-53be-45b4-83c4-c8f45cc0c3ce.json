@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon_hoa_xephang",
+    "texture": "de1021ca-3be3-47bf-bfe2-111a0a6eee8c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      90,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      90,
+      70
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

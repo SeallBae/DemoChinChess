@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_tat",
+    "texture": "3a6d4515-c3b1-41b1-b704-6dafbe8aec5d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      209,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      209,
+      69
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

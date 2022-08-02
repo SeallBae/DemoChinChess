@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "thoigiannguoichoi",
+    "texture": "ca6b7584-1fa2-450a-b54f-db1d3b96750a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      191,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      191,
+      53
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

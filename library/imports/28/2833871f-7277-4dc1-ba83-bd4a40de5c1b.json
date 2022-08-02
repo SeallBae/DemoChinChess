@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_chon_thuhethong",
+    "texture": "ed64a45b-4570-4a30-8616-14558e39a479",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      345,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      345,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

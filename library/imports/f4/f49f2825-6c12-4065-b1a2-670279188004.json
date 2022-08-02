@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "popup-xephang",
+    "texture": "c5242ab3-e2b9-47eb-9c4a-cb71de28b99e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      614,
+      1024
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      614,
+      1024
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

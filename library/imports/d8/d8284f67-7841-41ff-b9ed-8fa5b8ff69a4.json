@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ban-da-2",
+    "texture": "f7163ead-1f86-4f6a-a1e3-240d1258bff5",
+    "atlas": "",
+    "rect": [
+      21,
+      3,
+      423,
+      506
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      465,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
