@@ -4,12 +4,9 @@ cc._RF.push(module, 'aa6c1TRo4VL3KaFZDstwxgH', 'deleteuser');
 
 "use strict";
 
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
+var _axios_connection = require("../axios_connection");
+
+// const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,
   properties: {
@@ -19,34 +16,12 @@ cc.Class({
     }
   },
   onLoad: function onLoad() {},
-  deleteuser: function deleteuser() {
+  delete_user: function delete_user() {
     var userID = this.deluserID.string;
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/player/" + userID, {
-      method: "DELETE",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      } // body: JSON.stringify({ id: '1' })
-
-    }).then(function (response) {
-      return response.json();
-    }).then(function (data) {
-      console.log(data);
-    });
+    (0, _axios_connection.deleteuser)(userID);
   },
   start: function start() {
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/player", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      } // body: JSON.stringify({ id: '1' })
-
-    }).then(function (response) {
-      return response.json();
-    }).then(function (data) {
-      console.log(data);
-    });
+    (0, _axios_connection.receiveduserlist)();
   } // update (dt) {},
 
 });

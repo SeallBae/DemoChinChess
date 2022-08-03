@@ -5,7 +5,8 @@ cc._RF.push(module, '6323clwI0xJl4kOKrMKHG0j', 'joinroom');
 "use strict";
 
 var _require = require("socket.io-client"),
-    io = _require.io;
+    io = _require.io; // const fetch = require('node-fetch')
+
 
 cc.Class({
   "extends": cc.Component,

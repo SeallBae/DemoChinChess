@@ -1,0 +1,2 @@
+D:\CocosProjects\DemoChineseChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\app\jni\Android.mk
+D:\CocosProjects\DemoChineseChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\app\jni\Application.mk

@@ -11,7 +11,19 @@
 			"services": [
 				{
 					"service_id": "235",
-					"enable": true
+					"enable": false
+				},
+				{
+					"service_id": "278",
+					"enable": false
+				},
+				{
+					"service_id": "314",
+					"enable": false
+				},
+				{
+					"service_id": "315",
+					"enable": false
 				}
 			]
 		}

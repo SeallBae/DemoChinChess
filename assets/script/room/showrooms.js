@@ -1,4 +1,6 @@
 import { receiveduserID } from "../socket_connection";
+import {receivedUserbyID} from "../axios_connection";
+// const fetch = require('node-fetch')
 
 cc.Class({
   extends: cc.Component,
@@ -13,24 +15,13 @@ cc.Class({
     },
   },
   onLoad() {
-    // let PlayerInfo = cc.director
-    //   .getScene()
-    //   .getChildByName("PlayerInfo")
-    //   .getComponent("PlayerInfo");
+    let id = this.id;
     receiveduserID().then((data) => {
-      let id = this.id;
-      let uid = data;
-      fetch("https://chinese-chess-vnp.herokuapp.com/api/player/" + uid, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
+      uid = data;
+      let name = this.namedisplay;
+      receivedUserbyID(uid).then(data=>{
+        id.string = data.data.Username + " #" + uid;
       })
-        .then((response) => response.json())
-        .then(function (data) {
-          id.string = data.data.Username + " #" + uid;
-        });
     });
   },
   show_rooms() {

@@ -6,15 +6,6 @@ cc._RF.push(module, 'b1d607rb+tHY6WX/SvgNxMG', 'movecodelist');
 
 var _socket_connection = require("../socket_connection");
 
-movecode = [];
-list = []; // let socket = io("http://localhost:3000", {
-//     query: {
-//       userId: 1,
-//     },
-// });
-// import * as io from "socket.io-client";
-// let socket = io.connect('http://localhost:3000/');
-
 cc.Class({
   "extends": cc.Component,
   properties: {

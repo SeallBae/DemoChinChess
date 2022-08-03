@@ -1,4 +1,7 @@
-import { receiveduserID, senduserID } from "./socket_connection";
+import 'regenerator-runtime/runtime'
+import { senduserID } from "./socket_connection"
+import { createUser } from "./axios_connection";
+// const fetch = require('node-fetch')
 cc.Class({
   extends: cc.Component,
   properties: {
@@ -15,28 +18,16 @@ cc.Class({
   onload() {},
   start() {},
   load_scene() {
+    
     var PlayerInfo = this.PlayerInfo.getComponent("PlayerInfo");
     let name = this.Username.string;
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/player", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ Username: name }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("data.data.id", data.data.id);
-        PlayerInfo.uid = data.data.id;
-
-        cc.director.loadScene("homepage");
-      });
-    // receiveduserID().then((data) => {
-    //   PlayerInfo.uid = data;
-    //   PlayerInfo.uname = name;
-    // });
+    createUser(name)
+    .then((data)=>{
+      PlayerInfo.uname = data.data.Username;
+      PlayerInfo.uid = data.data.id;
+      cc.director.loadScene("homepage")
+    });
   },
   update(dt) {},
 });
-// var app = require('./socket_connection.js');
+

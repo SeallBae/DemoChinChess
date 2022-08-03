@@ -1,0 +1,11 @@
+{
+  "ndk": "D:\\AndroidStudioSDK\\ndk\\19.2.5345600",
+  "revision": {
+    "mMajor": 19,
+    "mMinor": 2,
+    "mMicro": 5345600,
+    "mPreview": 0,
+    "mPrecision": "MICRO",
+    "mPreviewSeparator": " "
+  }
+}

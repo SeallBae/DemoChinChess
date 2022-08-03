@@ -6,6 +6,9 @@ cc._RF.push(module, '07b14V0szlPSpdbncZwe8PD', 'display');
 
 var _socket_connection = require("../socket_connection");
 
+var _axios_connection = require("../axios_connection");
+
+// const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,
   properties: {
@@ -19,19 +22,9 @@ cc.Class({
 
     var uid = 0;
     (0, _socket_connection.receiveduserID)().then(function (data) {
-      console.log("data", data);
       uid = data;
       var name = _this.namedisplay;
-      console.log("uid", uid);
-      fetch("https://chinese-chess-vnp.herokuapp.com/api/player/" + uid, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        }
-      }).then(function (response) {
-        return response.json();
-      }).then(function (data) {
+      (0, _axios_connection.receivedUserbyID)(uid).then(function (data) {
         name.string = data.data.Username + " #" + uid;
       });
     });

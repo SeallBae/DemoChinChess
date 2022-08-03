@@ -1,4 +1,6 @@
 import { senduserID, receiveduserID } from "../socket_connection";
+import {receivedUserbyID} from "../axios_connection";
+// const fetch = require('node-fetch')
 cc.Class({
   extends: cc.Component,
 
@@ -11,24 +13,13 @@ cc.Class({
   onLoad() {
     var uid = 0;
     receiveduserID().then((data) => {
-      console.log("data", data);
       uid = data;
       let name = this.namedisplay;
-      console.log("uid", uid);
-      fetch("https://chinese-chess-vnp.herokuapp.com/api/player/" + uid, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
+      receivedUserbyID(uid).then(data=>{
+        name.string = data.data.Username + " #" + uid;
       })
-        .then((response) => response.json())
-        .then(function (data) {
-          name.string = data.data.Username + " #" + uid;
-        });
     });
   },
-
   start() {},
   onDisable() {},
   // update (dt) {},

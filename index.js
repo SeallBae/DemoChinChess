@@ -32,7 +32,7 @@ io.on("connection", async (socket) => {
   });
 
   socket.on("senduserID", (data) => {
-    socket.emit("receiveduserID", data);
+    socket.timeout(500).emit("receiveduserID", data);
   });
 
   socket.on("sendroomID", (data) => {

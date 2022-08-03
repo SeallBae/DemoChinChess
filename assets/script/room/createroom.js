@@ -6,6 +6,8 @@ import {
   sendroomID,
   receivedroomID,
 } from "../socket_connection";
+
+// const fetch = require('node-fetch')
 cc.Class({
   extends: cc.Component,
   properties: {},

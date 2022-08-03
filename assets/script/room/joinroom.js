@@ -1,4 +1,5 @@
 const { io } = require("socket.io-client");
+// const fetch = require('node-fetch')
 cc.Class({
   extends: cc.Component,
 

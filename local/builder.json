@@ -15,10 +15,9 @@
   "keystoreAliasPassword": "",
   "apiLevel": "android-28",
   "appABIs": [
-    "x86_64",
+    "armeabi-v7a",
     "x86",
-    "arm64-v8a",
-    "armeabi-v7a"
+    "x86_64"
   ],
   "vsVersion": "2017",
   "buildScriptsOnly": false

@@ -1,8 +1,8 @@
 {
     "ndk_module_path" :[
-        "E:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x",
-        "E:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x/cocos",
-        "E:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x/external"
+        "D:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x",
+        "D:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x/cocos",
+        "D:/CocosDashboard/resources/.editors/Creator/2.4.9/resources/cocos2d-x/external"
     ],
     "copy_resources": []
 }

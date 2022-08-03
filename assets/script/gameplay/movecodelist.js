@@ -1,12 +1,4 @@
-movecode = [];
-list = [];
-// let socket = io("http://localhost:3000", {
-//     query: {
-//       userId: 1,
-//     },
-// });
-// import * as io from "socket.io-client";
-// let socket = io.connect('http://localhost:3000/');
+
 import {
   receivedchessPosition,
   sendchessPosition,

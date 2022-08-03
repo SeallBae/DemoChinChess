@@ -6,6 +6,7 @@ cc._RF.push(module, '9aacf1bFzRDar2oq8ZNrJeu', 'createroom');
 
 var _socket_connection = require("../socket_connection");
 
+// const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,
   properties: {},
