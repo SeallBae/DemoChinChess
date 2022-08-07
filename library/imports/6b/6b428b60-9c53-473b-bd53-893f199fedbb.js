@@ -28,7 +28,7 @@ cc.Class({
     (0, _socket_connection.receiveduserID)().then(function (data) {
       uid = data;
       var name = _this.namedisplay;
-      (0, _axios_connection.receivedUserbyID)(uid).then(function (data) {
+      (0, _axios_connection.getUserbyID)(uid).then(function (data) {
         id.string = data.data.Username + " #" + uid;
       });
     });
@@ -36,18 +36,7 @@ cc.Class({
   show_rooms: function show_rooms() {
     var listrooms = this.listrooms;
     roomlist = [];
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/room", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    }).then(function (response) {
-      return response.json();
-    }) // .then(function(body){
-    //     return body.text();
-    // })
-    .then(function (data) {
+    (0, _axios_connection.getroomlist)().then(function (data) {
       for (var i = 0; i < data.data.length; i++) {
         if (data.data[i].Player1 != null && data.data[i].Player2 != null) {
           roomlist += JSON.stringify("Room no " + data.data[i].id + " --- full") + "\n";
@@ -63,15 +52,7 @@ cc.Class({
       listrooms.string = roomlist;
     });
   },
-  start: function start() {// receiveduserID()
-    //   .then((data) => {
-    //     console.log(data);
-    //     id.string = "abc";
-    //   })
-    //   .catch((error) => {
-    //     console.log("something wrongs");
-    //   });
-  },
+  start: function start() {},
   update: function update(dt) {}
 });
 

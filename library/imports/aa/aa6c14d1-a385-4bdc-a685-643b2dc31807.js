@@ -21,7 +21,7 @@ cc.Class({
     (0, _axios_connection.deleteuser)(userID);
   },
   start: function start() {
-    (0, _axios_connection.receiveduserlist)();
+    (0, _axios_connection.getuserlist)();
   } // update (dt) {},
 
 });

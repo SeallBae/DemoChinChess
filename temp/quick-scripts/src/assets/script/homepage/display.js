@@ -24,7 +24,7 @@ cc.Class({
     (0, _socket_connection.receiveduserID)().then(function (data) {
       uid = data;
       var name = _this.namedisplay;
-      (0, _axios_connection.receivedUserbyID)(uid).then(function (data) {
+      (0, _axios_connection.getUserbyID)(uid).then(function (data) {
         name.string = data.data.Username + " #" + uid;
       });
     });

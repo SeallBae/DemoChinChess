@@ -1,4 +1,4 @@
-import { receiveduserlist, deleteuser } from "../axios_connection";
+import { getuserlist, deleteuser } from "../axios_connection";
 // const fetch = require('node-fetch')
 
 cc.Class({
@@ -17,7 +17,7 @@ cc.Class({
   },
 
   start() {
-    receiveduserlist();
+    getuserlist();
   },
 
   // update (dt) {},

@@ -1,4 +1,9 @@
 const { io } = require("socket.io-client");
+import {
+  getroombyID,
+  joinroombyIDasp1,
+  joinroombyIDasp2,
+} from "../axios_connection";
 // const fetch = require('node-fetch')
 cc.Class({
   extends: cc.Component,
@@ -27,57 +32,26 @@ cc.Class({
     let uid = PlayerInfo.uid;
     let roomID = this.roomID.string;
     let pass = this.Pass.string;
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.data.id == roomID) {
-          if (data.data.Player1 == null) {
-            fetch(
-              "https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID,
-              {
-                method: "PATCH",
-                headers: {
-                  Accept: "application/json",
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ Player1: uid }),
-              }
-            )
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-                RoomInfos.rid = roomID;
-                cc.director.loadScene("room");
-              });
-          } else if (data.data.Player2 == null) {
-            fetch(
-              "https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID,
-              {
-                method: "PATCH",
-                headers: {
-                  Accept: "application/json",
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ Player2: uid }),
-              }
-            )
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-                RoomInfos.rid = roomID;
-                cc.director.loadScene("room");
-              });
-          } else {
-            console.log("Roomfull!");
-          }
+
+    getroombyID(roomID).then((data) => {
+      if (data.data.id == roomID) {
+        if (data.data.Player1 == null) {
+          joinroombyIDasp1(roomID, uid).then((data) => {
+            console.log(data);
+            RoomInfos.rid = roomID;
+            cc.director.loadScene("room");
+          });
+        } else if (data.data.Player2 == null) {
+          joinroombyIDasp2(roomID, uid).then((data) => {
+            console.log(data);
+            RoomInfos.rid = roomID;
+            cc.director.loadScene("room");
+          });
+        } else {
+          console.log("Roomfull!");
         }
-      });
+      }
+    });
   },
   start() {},
 

@@ -4,10 +4,12 @@ cc._RF.push(module, '6323clwI0xJl4kOKrMKHG0j', 'joinroom');
 
 "use strict";
 
+var _axios_connection = require("../axios_connection");
+
 var _require = require("socket.io-client"),
-    io = _require.io; // const fetch = require('node-fetch')
+    io = _require.io;
 
-
+// const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,
   properties: {
@@ -27,46 +29,16 @@ cc.Class({
     var uid = PlayerInfo.uid;
     var roomID = this.roomID.string;
     var pass = this.Pass.string;
-    fetch("https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    }).then(function (response) {
-      return response.json();
-    }).then(function (data) {
+    (0, _axios_connection.getroombyID)(roomID).then(function (data) {
       if (data.data.id == roomID) {
         if (data.data.Player1 == null) {
-          fetch("https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID, {
-            method: "PATCH",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              Player1: uid
-            })
-          }).then(function (response) {
-            return response.json();
-          }).then(function (data) {
+          (0, _axios_connection.joinroombyIDasp1)(roomID, uid).then(function (data) {
             console.log(data);
             RoomInfos.rid = roomID;
             cc.director.loadScene("room");
           });
         } else if (data.data.Player2 == null) {
-          fetch("https://chinese-chess-vnp.herokuapp.com/api/room/" + roomID, {
-            method: "PATCH",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              Player2: uid
-            })
-          }).then(function (response) {
-            return response.json();
-          }).then(function (data) {
+          (0, _axios_connection.joinroombyIDasp2)(roomID, uid).then(function (data) {
             console.log(data);
             RoomInfos.rid = roomID;
             cc.director.loadScene("room");

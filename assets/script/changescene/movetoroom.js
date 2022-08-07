@@ -7,7 +7,7 @@ cc.Class({
   onLoad() {},
   create_room() {},
   load_scene() {
-    // cc.director.loadScene("rooms");
+    cc.director.loadScene("rooms");
   },
   start() {},
 

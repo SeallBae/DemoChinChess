@@ -6,6 +6,8 @@ cc._RF.push(module, '9aacf1bFzRDar2oq8ZNrJeu', 'createroom');
 
 var _socket_connection = require("../socket_connection");
 
+var _axios_connection = require("../axios_connection");
+
 // const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,
@@ -16,19 +18,7 @@ cc.Class({
     (0, _socket_connection.receiveduserID)().then(function (data) {
       var uid = data;
       console.log("uid", uid);
-      fetch("https://chinese-chess-vnp.herokuapp.com/api/room", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          Player1: uid,
-          Player2: null
-        })
-      }).then(function (response) {
-        return response.json();
-      }).then(function (data) {
+      (0, _axios_connection.createroom)(uid).then(function (data) {
         RoomInfos.rid = data.data.id;
         console.log("roomid", RoomInfos.rid);
         cc.director.loadScene("room");
