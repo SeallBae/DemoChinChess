@@ -23,7 +23,7 @@ cc.Class({
 
   start() {},
 
-  update(dt) {
+  update(dt = 1000) {
     senduserID(this.uid);
   },
 });

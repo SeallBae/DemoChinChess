@@ -27,6 +27,8 @@ cc.Class({
       (0, _axios_connection.getUserbyID)(uid).then(function (data) {
         name.string = data.data.Username + " #" + uid;
       });
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   start: function start() {},

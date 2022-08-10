@@ -45,7 +45,7 @@ cc.Class({
           });
         }
         if (data.data.Player2 == PlayerInfo.uid) {
-          quitfullroombyIDasp2(rid).then((data) => {
+          quitfullroombyIDasp2(roomID).then((data) => {
             console.log(data);
             RoomInfos.rid = null;
             cc.director.loadScene("rooms");

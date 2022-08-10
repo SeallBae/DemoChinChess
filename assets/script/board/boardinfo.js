@@ -1,6 +1,6 @@
 var map = cc.Class({
   extends: cc.Component,
-
+  
   properties: {
     movecode: [],
     countblackdead: 0,

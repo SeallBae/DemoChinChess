@@ -82,7 +82,7 @@ cc.Class({
           break;
         }
       }
-      if (
+      if (  
         this.movelist.length == 0 ||
         this.movelist[this.movelist.length - 1] !==
           JSON.stringify(data[data.length - 1])
@@ -90,6 +90,9 @@ cc.Class({
         this.movelist.push(JSON.stringify(data[data.length - 1]));
       }
       movecodelist.string = this.movelist;
+    })
+    .catch(function () {
+      console.log("Promise Rejected");
     });
     receiveddeadchess().then((data) => {
       for (var j = 0; j < redc.length; j++) {
@@ -112,6 +115,8 @@ cc.Class({
           blackc[k].parent = deadblackchess;
         }
       }
+    }).catch(function () {
+      console.log("Promise Rejected");
     });
   },
 });

@@ -47,6 +47,8 @@ cc.Class({
           console.log("Roomfull!");
         }
       }
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   start: function start() {} // update (dt) {},

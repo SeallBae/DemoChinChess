@@ -93,6 +93,8 @@ cc.Class({
       }
 
       movecodelist.string = _this.movelist;
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
     (0, _socket_connection.receiveddeadchess)().then(function (data) {
       for (var j = 0; j < redc.length; j++) {
@@ -116,6 +118,8 @@ cc.Class({
           blackc[k].parent = deadblackchess;
         }
       }
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   }
 });

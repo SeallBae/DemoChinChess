@@ -6,8 +6,8 @@
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\x86",
-  "cxxBuildFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\x86",
+  "originalCxxBuildFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\x86",
+  "cxxBuildFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\x86",
   "abiPlatformVersion": 16,
   "variant": {
     "buildSystemArgumentList": [
@@ -19,8 +19,8 @@
     "cFlagsList": [],
     "cppFlagsList": [],
     "variantName": "debug",
-    "objFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
-    "soFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "objFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
+    "soFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\debug\\lib",
     "isDebuggableEnabled": true,
     "validAbiList": [
       "ARMEABI_V7A",
@@ -33,13 +33,13 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx",
+      "cxxFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx",
       "splitsAbiFilterSet": [],
-      "intermediatesFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates",
+      "intermediatesFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates",
       "gradleModulePathName": ":instantapp",
-      "moduleRootFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp",
-      "moduleBuildFile": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build.gradle",
-      "makeFile": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+      "moduleRootFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp",
+      "moduleBuildFile": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build.gradle",
+      "makeFile": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
       "buildSystem": "NDK_BUILD",
       "ndkFolder": "D:\\AndroidStudioSDK\\ndk\\19.2.5345600",
       "ndkVersion": "19.2.5345600",
@@ -116,9 +116,9 @@
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio",
-        "cxxFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\.cxx",
-        "compilerSettingsCacheFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\.cxx",
+        "rootBuildGradleFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio",
+        "cxxFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\.cxx",
+        "compilerSettingsCacheFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\.cxx",
         "sdkFolder": "D:\\AndroidStudioSDK",
         "isNativeCompilerSettingsCacheEnabled": false,
         "isBuildOnlyTargetAbiEnabled": true,
@@ -128,10 +128,10 @@
       },
       "nativeBuildOutputLevel": "QUIET"
     },
-    "prefabDirectory": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\prefab"
+    "prefabDirectory": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\prefab"
   },
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\prefab\\x86"
+  "prefabFolder": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\.cxx\\ndkBuild\\debug\\prefab\\x86"
 }

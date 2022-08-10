@@ -1,5 +1,5 @@
 import * as io from "socket.io-client";
-const socket = io.connect("http://localhost:3000", {
+const socket = io.connect("http://192.168.1.31:3000", {
   reconnectionDelayMax: 10000,
   query: {
     userId: 10,
@@ -7,7 +7,7 @@ const socket = io.connect("http://localhost:3000", {
 });
 
 const senduserID = (data) => {
-  socket.emit("senduserID", data);
+  socket.timeout(2000).emit("senduserID", data);
 };
 
 const receiveduserID = () => {
@@ -21,11 +21,10 @@ const receiveduserID = () => {
 };
 
 const sendroomID = (data) => {
-  socket.emit("sendroomID", data);
+  socket.timeout(2000).emit("sendroomID", data);
 };
 
-const receivedroomID = () => {
-  console.log("receivedroomID() run");
+const receivedroomID = () => {  
   return new Promise((resolve, reject) => {
     console.log("returnnew Promise run");
     socket.on("receivedroomID", (data) => {
@@ -39,7 +38,7 @@ const receivedroomID = () => {
 //chess moves field
 const chess = [];
 const sendchessPosition = (data) => {
-  socket.emit("sendChessPosition", data);
+  socket.timeout(500).emit("sendChessPosition", data);
 };
 const receivedchessPosition = function () {
   return new Promise((resolve, reject) => {
@@ -52,8 +51,9 @@ const receivedchessPosition = function () {
 };
 
 const senddeadchess = (data) => {
-  socket.emit("senddeadchess", data);
+  socket.timeout(500).emit("senddeadchess", data);
 };
+
 const receiveddeadchess = function () {
   return new Promise((resolve, reject) => {
     socket.once("receiveddeadchess", (data) => {
@@ -64,7 +64,7 @@ const receiveddeadchess = function () {
 };
 
 const sendstate = (data) => {
-  socket.emit("sendstate", data);
+  socket.timeout(500).emit("sendstate", data);
 };
 const receivedstate = function () {
   return new Promise((resolve, reject) => {

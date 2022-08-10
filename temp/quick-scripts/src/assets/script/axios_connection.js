@@ -15,7 +15,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-var axios = require("axios-creator");
+var axios = require("axios-creator")["default"];
 
 var urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 var urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
@@ -173,7 +173,7 @@ var getroomlist = /*#__PURE__*/function () {
 exports.getroomlist = getroomlist;
 
 var createroom = /*#__PURE__*/function () {
-  var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(Player1) {
+  var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(uid) {
     return regeneratorRuntime.wrap(function _callee6$(_context6) {
       while (1) {
         switch (_context6.prev = _context6.next) {
@@ -181,12 +181,21 @@ var createroom = /*#__PURE__*/function () {
             return _context6.abrupt("return", new Promise(function (resolve, reject) {
               axios({
                 method: "post",
-                url: urlroom,
-                Player1: Player1,
-                Player2: null
+                url: urlroom
               }).then(function (response) {
-                console.log(response.data);
-                resolve(response.data);
+                console.log(response); // var rid = response.data.data.id;
+
+                // var rid = response.data.data.id;
+                axios({
+                  method: "patch",
+                  url: urlroom + "/" + response.data.data.id,
+                  data: {
+                    Player1: uid
+                  }
+                }).then(function (response) {
+                  console.log(response);
+                });
+                resolve(response.data.data.id);
               });
             }));
 
@@ -216,6 +225,7 @@ var getroombyID = /*#__PURE__*/function () {
                 method: "get",
                 url: urlroom + "/" + id
               }).then(function (response) {
+                console.log(response);
                 resolve(response.data);
               });
             }));
@@ -245,7 +255,9 @@ var joinroombyIDasp1 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player1: uid
+                data: {
+                  Player1: uid
+                }
               }).then(function (response) {
                 resolve(response.data);
               });
@@ -276,7 +288,9 @@ var joinroombyIDasp2 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player1: uid
+                data: {
+                  Player2: uid
+                }
               }).then(function (response) {
                 resolve(response.data);
               });
@@ -307,8 +321,10 @@ var quitfullroombyIDasp1 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player1: uid,
-                Player2: null
+                data: {
+                  Player1: uid,
+                  Player2: null
+                }
               }).then(function (response) {
                 resolve(response.data);
               });
@@ -339,7 +355,9 @@ var quitfullroombyIDasp2 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player2: null
+                data: {
+                  Player2: null
+                }
               }).then(function (response) {
                 resolve(response.data);
               });
@@ -370,7 +388,9 @@ var quitroombyIDasp1 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player1: null
+                data: {
+                  Player1: null
+                }
               }).then(function (response) {
                 resolve(response.data);
               });
@@ -401,7 +421,9 @@ var quitroombyIDasp2 = /*#__PURE__*/function () {
               axios({
                 method: "patch",
                 url: urlroom + "/" + rid,
-                Player2: null
+                data: {
+                  Player2: null
+                }
               }).then(function (response) {
                 resolve(response.data);
               });

@@ -11,7 +11,7 @@
 			"services": [
 				{
 					"service_id": "235",
-					"enable": false
+					"enable": true
 				},
 				{
 					"service_id": "278",

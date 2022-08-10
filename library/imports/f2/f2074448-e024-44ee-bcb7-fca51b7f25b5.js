@@ -13,7 +13,7 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var socket = io.connect("http://localhost:3000", {
+var socket = io.connect("http://192.168.1.31:3000", {
   reconnectionDelayMax: 10000,
   query: {
     userId: 10
@@ -21,7 +21,7 @@ var socket = io.connect("http://localhost:3000", {
 });
 
 var senduserID = function senduserID(data) {
-  socket.emit("senduserID", data);
+  socket.timeout(2000).emit("senduserID", data);
 };
 
 exports.senduserID = senduserID;
@@ -39,13 +39,12 @@ var receiveduserID = function receiveduserID() {
 exports.receiveduserID = receiveduserID;
 
 var sendroomID = function sendroomID(data) {
-  socket.emit("sendroomID", data);
+  socket.timeout(2000).emit("sendroomID", data);
 };
 
 exports.sendroomID = sendroomID;
 
 var receivedroomID = function receivedroomID() {
-  console.log("receivedroomID() run");
   return new Promise(function (resolve, reject) {
     console.log("returnnew Promise run");
     socket.on("receivedroomID", function (data) {
@@ -61,7 +60,7 @@ exports.receivedroomID = receivedroomID;
 var chess = [];
 
 var sendchessPosition = function sendchessPosition(data) {
-  socket.emit("sendChessPosition", data);
+  socket.timeout(500).emit("sendChessPosition", data);
 };
 
 exports.sendchessPosition = sendchessPosition;
@@ -79,7 +78,7 @@ var receivedchessPosition = function receivedchessPosition() {
 exports.receivedchessPosition = receivedchessPosition;
 
 var senddeadchess = function senddeadchess(data) {
-  socket.emit("senddeadchess", data);
+  socket.timeout(500).emit("senddeadchess", data);
 };
 
 exports.senddeadchess = senddeadchess;
@@ -96,7 +95,7 @@ var receiveddeadchess = function receiveddeadchess() {
 exports.receiveddeadchess = receiveddeadchess;
 
 var sendstate = function sendstate(data) {
-  socket.emit("sendstate", data);
+  socket.timeout(500).emit("sendstate", data);
 };
 
 exports.sendstate = sendstate;

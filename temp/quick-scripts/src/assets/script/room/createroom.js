@@ -19,10 +19,13 @@ cc.Class({
       var uid = data;
       console.log("uid", uid);
       (0, _axios_connection.createroom)(uid).then(function (data) {
-        RoomInfos.rid = data.data.id;
+        console.log(data);
+        RoomInfos.rid = data;
         console.log("roomid", RoomInfos.rid);
         cc.director.loadScene("room");
       });
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   start: function start() {} // update (dt) {},

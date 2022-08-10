@@ -22,11 +22,15 @@ cc.Class({
       var uid = data;
       console.log("uid", uid);
       createroom(uid).then((data) => {
-        RoomInfos.rid = data.data.id;
+        console.log(data);
+        RoomInfos.rid = data;
         console.log("roomid", RoomInfos.rid);
         cc.director.loadScene("room");
       });
+    }).catch(function () {
+      console.log("Promise Rejected");
     });
+    
   },
   start() {},
 

@@ -34,7 +34,6 @@ require('./assets/script/gameplay/list');
 require('./assets/script/gameplay/movecodelist');
 require('./assets/script/gameplay/readybutton');
 require('./assets/script/homepage/display');
-require('./assets/script/room/PrepareRoom/PrepareRoom');
 require('./assets/script/room/PrepareRoom/Sendchat');
 require('./assets/script/room/PrepareRoom/Showchat');
 require('./assets/script/room/PrepareRoom/roominfo');

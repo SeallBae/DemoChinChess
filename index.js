@@ -26,7 +26,6 @@ server.listen(3000, () => {
 io.on("connection", async (socket) => {
   console.log("Connected: " + socket.userId);
   // console.log(socket);
-
   socket.on("disconnect", () => {
     console.log("Disconnected: " + socket.userId);
   });
@@ -36,28 +35,28 @@ io.on("connection", async (socket) => {
   });
 
   socket.on("sendroomID", (data) => {
-    socket.emit("receivedroomID", data);
+    socket.timeout(500).emit("receivedroomID", data);
   });
   socket.on("sendChessPosition", (data) => {
-    io.emit("receivedChessPosition", data);
+    io.timeout(500).emit("receivedChessPosition", data);
   });
   socket.on("senddeadchess", (data) => {
-    io.emit("receiveddeadchess", data);
+    io.timeout(500).emit("receiveddeadchess", data);
   });
   socket.on("name", (data) => {
     console.log(data);
   });
   socket.on("userID", (data) => {
     console.log("reach user ID" + data);
-    socket.emit("userID", data);
+    socket.timeout(500).emit("userID", data);
   });
   socket.on("rooms", (data) => {
     console.log("data rooms reach global");
-    io.emit("globalrooms", data);
+    io.timeout(500).emit("globalrooms", data);
   });
   socket.on("roomID", (data) => {
     console.log("data room reach");
-    socket.emit("returnroomID", data);
+    socket.timeout(500).emit("returnroomID", data);
   });
   // socket.on("joinRoom", ({ roomId }) => {
   //     socket.join(roomId);

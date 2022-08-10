@@ -30,6 +30,8 @@ cc.Class({
       var name = _this.namedisplay;
       (0, _axios_connection.getUserbyID)(uid).then(function (data) {
         id.string = data.data.Username + " #" + uid;
+      })["catch"](function () {
+        console.log("Promise Rejected");
       });
     });
   },

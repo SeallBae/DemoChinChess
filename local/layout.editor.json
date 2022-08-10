@@ -7,19 +7,19 @@
       "windowType": "dockable",
       "x": 0,
       "y": 0,
-      "width": 1536,
-      "height": 835,
+      "width": 1920,
+      "height": 1040,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 343.0874938964844,
-            "height": 718.6000366210938,
+            "width": 430,
+            "height": 922,
             "type": "dock-v",
             "children": [
               {
-                "width": 343.0874938964844,
-                "height": 357.8000183105469,
+                "width": 430,
+                "height": 460,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 343.0874938964844,
-                "height": 357.8000183105469,
+                "width": 430,
+                "height": 459,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,8 +38,8 @@
             ]
           },
           {
-            "width": 785.2125244140625,
-            "height": 718.6000366210938,
+            "width": 801,
+            "height": 922,
             "type": "panel",
             "active": 0,
             "children": [
@@ -47,8 +47,8 @@
             ]
           },
           {
-            "width": 388.1000061035156,
-            "height": 718.6000366210938,
+            "width": 667,
+            "height": 922,
             "type": "panel",
             "active": 0,
             "children": [
@@ -66,7 +66,8 @@
         "cocos-services"
       ]
     },
-    " common-asset-worker-worker": {}
+    "window-1660113888282": {},
+    " build-worker-worker": {}
   },
   "panels": {
     "console": {
@@ -112,10 +113,10 @@
       "height": 586
     },
     "builder": {
-      "x": 538,
-      "y": 29,
-      "width": 568,
-      "height": 963
+      "x": 663,
+      "y": 27,
+      "width": 640,
+      "height": 962
     }
   },
   "panelLabelWidth": {

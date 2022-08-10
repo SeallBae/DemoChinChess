@@ -21,6 +21,8 @@ cc.Class({
       let name = this.namedisplay;
       getUserbyID(uid).then((data) => {
         id.string = data.data.Username + " #" + uid;
+      }).catch(function () {
+        console.log("Promise Rejected");
       });
     });
   },

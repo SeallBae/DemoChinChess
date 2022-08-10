@@ -1,6 +1,6 @@
 import { async } from "regenerator-runtime";
 import "regenerator-runtime/runtime";
-const axios = require("axios-creator");
+const axios = require("axios-creator").default;
 const urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 const urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
 
@@ -61,16 +61,24 @@ const getroomlist = async () => {
   });
 };
 
-const createroom = async (Player1) => {
+const createroom = async (uid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "post",
       url: urlroom,
-      Player1: Player1,
-      Player2: null,
     }).then((response) => {
-      console.log(response.data);
-      resolve(response.data);
+      console.log(response);  
+      // var rid = response.data.data.id;
+      axios({
+        method: "patch",
+        url: urlroom + "/" + response.data.data.id,
+        data:{
+          Player1: uid,
+        },
+      }).then(response=>{
+        console.log(response);
+      })
+      resolve(response.data.data.id) 
     });
   });
 };
@@ -81,6 +89,7 @@ const getroombyID = async (id) => {
       method: "get",
       url: urlroom + "/" + id,
     }).then((response) => {
+      console.log(response);
       resolve(response.data);
     });
   });
@@ -91,7 +100,9 @@ const joinroombyIDasp1 = async (rid, uid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player1: uid,
+      data:{
+        Player1: uid,
+      },
     }).then((response) => {
       resolve(response.data);
     });
@@ -102,7 +113,9 @@ const joinroombyIDasp2 = async (rid, uid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player1: uid,
+      data:{
+        Player2: uid,
+      },
     }).then((response) => {
       resolve(response.data);
     });
@@ -113,8 +126,10 @@ const quitfullroombyIDasp1 = async (rid, uid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player1: uid,
-      Player2: null,
+      data:{
+        Player1: uid,
+        Player2: null,
+      },
     }).then((response) => {
       resolve(response.data);
     });
@@ -125,7 +140,9 @@ const quitfullroombyIDasp2 = async (rid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player2: null,
+      data:{
+        Player2: null,
+      },
     }).then((response) => {
       resolve(response.data);
     });
@@ -136,7 +153,9 @@ const quitroombyIDasp1 = async (rid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player1: null,
+      data:{
+        Player1: null,
+      },
     }).then((response) => {
       resolve(response.data);
     });
@@ -147,7 +166,9 @@ const quitroombyIDasp2 = async (rid) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      Player2: null,
+      data:{
+        Player2: null,
+      },
     }).then((response) => {
       resolve(response.data);
     });

@@ -25,6 +25,10 @@ cc.Class({
   },
   start: function start() {},
   update: function update(dt) {
+    if (dt === void 0) {
+      dt = 1000;
+    }
+
     (0, _socket_connection.senduserID)(this.uid);
   }
 });

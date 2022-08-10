@@ -12,13 +12,17 @@ cc.Class({
   },
   onLoad() {
     var uid = 0;
-    receiveduserID().then((data) => {
-      uid = data;
-      let name = this.namedisplay;
-      getUserbyID(uid).then((data) => {
-        name.string = data.data.Username + " #" + uid;
+    receiveduserID()
+      .then((data) => {
+        uid = data;
+        let name = this.namedisplay;
+        getUserbyID(uid).then((data) => {
+          name.string = data.data.Username + " #" + uid;
+        });
+      })
+      .catch(function () {
+        console.log("Promise Rejected");
       });
-    });
   },
   start() {},
   onDisable() {},

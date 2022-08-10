@@ -1,20 +1,20 @@
 {
   "buildFiles": [
-    "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-    "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk"
+    "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk"
   ],
   "cleanCommandsComponents": [
     [
       "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
       "NDK_PROJECT_PATH\u003dnull",
-      "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-      "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+      "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+      "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
       "APP_ABI\u003dx86",
       "NDK_ALL_ABIS\u003dx86",
       "NDK_DEBUG\u003d1",
       "APP_PLATFORM\u003dandroid-16",
-      "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-      "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+      "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+      "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
       "NDK_TOOLCHAIN_VERSION\u003dclang",
       "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
       "NDK_DEBUG\u003d1",
@@ -24,14 +24,14 @@
   "buildTargetsCommandComponents": [
     "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
     "NDK_PROJECT_PATH\u003dnull",
-    "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-    "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+    "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
     "APP_ABI\u003dx86",
     "NDK_ALL_ABIS\u003dx86",
     "NDK_DEBUG\u003d1",
     "APP_PLATFORM\u003dandroid-16",
-    "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-    "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+    "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
     "NDK_TOOLCHAIN_VERSION\u003dclang",
     "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
     "-j12",
@@ -43,208 +43,208 @@
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2d.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2d.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "cocos2d",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2d.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2d.a"
     },
     "cocos2djs-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2djs.so"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2djs.so"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "cocos2djs",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2djs.so"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2djs.so"
     },
     "pvmp3dec-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libpvmp3dec.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libpvmp3dec.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "pvmp3dec",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libpvmp3dec.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libpvmp3dec.a"
     },
     "vorbisidec-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libvorbisidec.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libvorbisidec.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "vorbisidec",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libvorbisidec.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libvorbisidec.a"
     },
     "extension-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libextension.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libextension.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "extension",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libextension.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libextension.a"
     },
     "editorsupport-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libeditorsupport.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libeditorsupport.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "editorsupport",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libeditorsupport.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libeditorsupport.a"
     },
     "cocos2dandroid-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2dandroid.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcocos2dandroid.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "cocos2dandroid",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2dandroid.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcocos2dandroid.a"
     },
     "audioengine-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libaudioengine.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libaudioengine.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "audioengine",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libaudioengine.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libaudioengine.a"
     },
     "cpufeatures-debug-x86": {
       "buildCommandComponents": [
         "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
         "NDK_PROJECT_PATH\u003dnull",
-        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
         "APP_ABI\u003dx86",
         "NDK_ALL_ABIS\u003dx86",
         "NDK_DEBUG\u003d1",
         "APP_PLATFORM\u003dandroid-16",
-        "NDK_OUT\u003dD:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
-        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
         "NDK_TOOLCHAIN_VERSION\u003dclang",
         "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
         "-j12",
         "NDK_DEBUG\u003d1",
-        "D:/CocosProjects/DemoChineseChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcpufeatures.a"
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj/local/x86/libcpufeatures.a"
       ],
       "toolchain": "toolchain-x86",
       "abi": "x86",
       "artifactName": "cpufeatures",
-      "output": "D:\\CocosProjects\\DemoChineseChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcpufeatures.a"
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86\\libcpufeatures.a"
     }
   },
   "toolchains": {
