@@ -4,8 +4,6 @@ cc._RF.push(module, '56a93gRbI1B75pcuNQS6gV5', 'Playnow');
 
 "use strict";
 
-require("regenerator-runtime/runtime");
-
 var _socket_connection = require("./socket_connection");
 
 var _axios_connection = require("./axios_connection");
@@ -33,6 +31,8 @@ cc.Class({
       PlayerInfo.uname = data.data.Username;
       PlayerInfo.uid = data.data.id;
       cc.director.loadScene("homepage");
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   update: function update(dt) {}

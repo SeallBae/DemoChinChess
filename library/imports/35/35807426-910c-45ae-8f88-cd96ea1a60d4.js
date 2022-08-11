@@ -32,7 +32,9 @@ cc.Class({
             console.log(data);
             RoomInfos.rid = null;
             cc.director.loadScene("rooms");
-          });
+          }); // .catch(function () {
+          //   console.log("Promise Rejected");
+          // });
         }
 
         if (data.data.Player2 == PlayerInfo.uid) {
@@ -40,7 +42,9 @@ cc.Class({
             console.log(data);
             RoomInfos.rid = null;
             cc.director.loadScene("rooms");
-          });
+          }); // .catch(function () {
+          //   console.log("Promise Rejected");
+          // });
         }
       }
 
@@ -49,7 +53,9 @@ cc.Class({
           console.log(data);
           RoomInfos.rid = null;
           cc.director.loadScene("rooms");
-        });
+        }); // .catch(function () {
+        //   console.log("Promise Rejected");
+        // });
       }
 
       if (data.data.Player1 != null && data.data.Player2 == null) {
@@ -57,8 +63,12 @@ cc.Class({
           console.log(data);
           RoomInfos.rid = null;
           cc.director.loadScene("rooms");
-        });
+        }); // .catch(function () {
+        //   console.log("Promise Rejected");
+        // });
       }
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   start: function start() {},

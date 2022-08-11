@@ -1,4 +1,3 @@
-import 'regenerator-runtime/runtime'
 import { senduserID } from "./socket_connection"
 import { createUser } from "./axios_connection";
 // const fetch = require('node-fetch')
@@ -26,6 +25,8 @@ cc.Class({
       PlayerInfo.uname = data.data.Username;
       PlayerInfo.uid = data.data.id;
       cc.director.loadScene("homepage")
+    }).catch(function () {
+      console.log("Promise Rejected");
     });
   },
   update(dt) {},

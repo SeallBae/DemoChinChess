@@ -1,6 +1,6 @@
-import { async } from "regenerator-runtime";
 import "regenerator-runtime/runtime";
-const axios = require("axios-creator").default;
+import { async } from "regenerator-runtime";
+const axios = require("axios-creator");
 const urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 const urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
 

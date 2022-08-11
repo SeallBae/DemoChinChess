@@ -1,0 +1,264 @@
+{
+  "buildFiles": [
+    "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+    "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+      "NDK_PROJECT_PATH\u003dnull",
+      "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+      "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+      "APP_ABI\u003darmeabi-v7a",
+      "NDK_ALL_ABIS\u003darmeabi-v7a",
+      "NDK_DEBUG\u003d0",
+      "APP_PLATFORM\u003dandroid-16",
+      "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+      "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+      "NDK_TOOLCHAIN_VERSION\u003dclang",
+      "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+      "NDK_DEBUG\u003d0",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+    "NDK_PROJECT_PATH\u003dnull",
+    "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+    "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+    "APP_ABI\u003darmeabi-v7a",
+    "NDK_ALL_ABIS\u003darmeabi-v7a",
+    "NDK_DEBUG\u003d0",
+    "APP_PLATFORM\u003dandroid-16",
+    "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+    "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+    "NDK_TOOLCHAIN_VERSION\u003dclang",
+    "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+    "-j12",
+    "NDK_DEBUG\u003d0",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "cocos2djs-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libcocos2djs.so"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "cocos2djs",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libcocos2djs.so"
+    },
+    "pvmp3dec-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libpvmp3dec.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "pvmp3dec",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libpvmp3dec.a"
+    },
+    "cocos2dandroid-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libcocos2dandroid.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "cocos2dandroid",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libcocos2dandroid.a"
+    },
+    "extension-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libextension.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "extension",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libextension.a"
+    },
+    "editorsupport-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libeditorsupport.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "editorsupport",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libeditorsupport.a"
+    },
+    "vorbisidec-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libvorbisidec.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "vorbisidec",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libvorbisidec.a"
+    },
+    "audioengine-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libaudioengine.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "audioengine",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libaudioengine.a"
+    },
+    "cocos2d-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libcocos2d.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "cocos2d",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libcocos2d.a"
+    },
+    "cpufeatures-release-armeabi-v7a": {
+      "buildCommandComponents": [
+        "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\ndk-build.cmd",
+        "NDK_PROJECT_PATH\u003dnull",
+        "APP_BUILD_SCRIPT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Android.mk",
+        "NDK_APPLICATION_MK\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\jni\\Application.mk",
+        "APP_ABI\u003darmeabi-v7a",
+        "NDK_ALL_ABIS\u003darmeabi-v7a",
+        "NDK_DEBUG\u003d0",
+        "APP_PLATFORM\u003dandroid-16",
+        "NDK_OUT\u003dD:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj",
+        "NDK_LIBS_OUT\u003dD:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\lib",
+        "NDK_TOOLCHAIN_VERSION\u003dclang",
+        "NDK_MODULE_PATH\u003dD:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\cocos;D:\\CocosDashboard\\resources\\.editors\\Creator\\2.4.9\\resources\\cocos2d-x\\external",
+        "-j12",
+        "NDK_DEBUG\u003d0",
+        "D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libcpufeatures.a"
+      ],
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "cpufeatures",
+      "output": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\instantapp\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libcpufeatures.a"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\AndroidStudioSDK\\ndk\\19.2.5345600\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c",
+    "s"
+  ],
+  "cppFileExtensions": [
+    "cc",
+    "cpp"
+  ]
+}

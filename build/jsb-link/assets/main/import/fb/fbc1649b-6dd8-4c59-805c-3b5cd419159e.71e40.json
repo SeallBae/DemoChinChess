@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ccPJ1exE5K4Zt5KYUZ/rH6"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "icon_money",
+      "rect": [
+        21,
+        12,
+        53,
+        56
+      ],
+      "offset": [
+        -1,
+        0
+      ],
+      "originalSize": [
+        97,
+        80
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,1 @@
+D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\instantapp\build\intermediates\ndkBuild\release\obj\local\x86_64

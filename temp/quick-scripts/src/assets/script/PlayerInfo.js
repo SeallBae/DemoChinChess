@@ -30,6 +30,7 @@ cc.Class({
     }
 
     (0, _socket_connection.senduserID)(this.uid);
+    cc.game.addPersistRootNode(this.node);
   }
 });
 

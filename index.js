@@ -31,32 +31,32 @@ io.on("connection", async (socket) => {
   });
 
   socket.on("senduserID", (data) => {
-    socket.timeout(500).emit("receiveduserID", data);
+    socket.emit("receiveduserID", data);
   });
 
   socket.on("sendroomID", (data) => {
-    socket.timeout(500).emit("receivedroomID", data);
+    socket.emit("receivedroomID", data);
   });
   socket.on("sendChessPosition", (data) => {
-    io.timeout(500).emit("receivedChessPosition", data);
+    io.emit("receivedChessPosition", data);
   });
   socket.on("senddeadchess", (data) => {
-    io.timeout(500).emit("receiveddeadchess", data);
+    io.emit("receiveddeadchess", data);
   });
   socket.on("name", (data) => {
     console.log(data);
   });
   socket.on("userID", (data) => {
     console.log("reach user ID" + data);
-    socket.timeout(500).emit("userID", data);
+    socket.emit("userID", data);
   });
   socket.on("rooms", (data) => {
     console.log("data rooms reach global");
-    io.timeout(500).emit("globalrooms", data);
+    io.emit("globalrooms", data);
   });
   socket.on("roomID", (data) => {
     console.log("data room reach");
-    socket.timeout(500).emit("returnroomID", data);
+    socket.emit("returnroomID", data);
   });
   // socket.on("joinRoom", ({ roomId }) => {
   //     socket.join(roomId);

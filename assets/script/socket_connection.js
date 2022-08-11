@@ -7,7 +7,7 @@ const socket = io.connect("http://192.168.1.31:3000", {
 });
 
 const senduserID = (data) => {
-  socket.timeout(2000).emit("senduserID", data);
+  socket.emit("senduserID", data);
 };
 
 const receiveduserID = () => {
@@ -21,7 +21,7 @@ const receiveduserID = () => {
 };
 
 const sendroomID = (data) => {
-  socket.timeout(2000).emit("sendroomID", data);
+  socket.emit("sendroomID", data);
 };
 
 const receivedroomID = () => {  
@@ -51,7 +51,7 @@ const receivedchessPosition = function () {
 };
 
 const senddeadchess = (data) => {
-  socket.timeout(500).emit("senddeadchess", data);
+  socket.emit("senddeadchess", data);
 };
 
 const receiveddeadchess = function () {
@@ -64,7 +64,7 @@ const receiveddeadchess = function () {
 };
 
 const sendstate = (data) => {
-  socket.timeout(500).emit("sendstate", data);
+  socket.emit("sendstate", data);
 };
 const receivedstate = function () {
   return new Promise((resolve, reject) => {

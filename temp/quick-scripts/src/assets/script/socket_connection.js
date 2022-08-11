@@ -21,7 +21,7 @@ var socket = io.connect("http://192.168.1.31:3000", {
 });
 
 var senduserID = function senduserID(data) {
-  socket.timeout(2000).emit("senduserID", data);
+  socket.emit("senduserID", data);
 };
 
 exports.senduserID = senduserID;
@@ -39,7 +39,7 @@ var receiveduserID = function receiveduserID() {
 exports.receiveduserID = receiveduserID;
 
 var sendroomID = function sendroomID(data) {
-  socket.timeout(2000).emit("sendroomID", data);
+  socket.emit("sendroomID", data);
 };
 
 exports.sendroomID = sendroomID;
@@ -78,7 +78,7 @@ var receivedchessPosition = function receivedchessPosition() {
 exports.receivedchessPosition = receivedchessPosition;
 
 var senddeadchess = function senddeadchess(data) {
-  socket.timeout(500).emit("senddeadchess", data);
+  socket.emit("senddeadchess", data);
 };
 
 exports.senddeadchess = senddeadchess;
@@ -95,7 +95,7 @@ var receiveddeadchess = function receiveddeadchess() {
 exports.receiveddeadchess = receiveddeadchess;
 
 var sendstate = function sendstate(data) {
-  socket.timeout(500).emit("sendstate", data);
+  socket.emit("sendstate", data);
 };
 
 exports.sendstate = sendstate;

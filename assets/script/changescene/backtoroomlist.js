@@ -8,8 +8,6 @@
 import { receivedroomID } from "../socket_connection";
 import {
   getroombyID,
-  joinroombyIDasp1,
-  joinroombyIDasp2,
   quitfullroombyIDasp1,
   quitfullroombyIDasp2,
   quitroombyIDasp1,
@@ -42,14 +40,19 @@ cc.Class({
             console.log(data);
             RoomInfos.rid = null;
             cc.director.loadScene("rooms");
-          });
+          })
+          // .catch(function () {
+          //   console.log("Promise Rejected");
+          // });
         }
         if (data.data.Player2 == PlayerInfo.uid) {
           quitfullroombyIDasp2(roomID).then((data) => {
             console.log(data);
             RoomInfos.rid = null;
             cc.director.loadScene("rooms");
-          });
+          })// .catch(function () {
+            //   console.log("Promise Rejected");
+            // });
         }
       }
       if (data.data.Player1 == null && data.data.Player2 != null) {
@@ -57,15 +60,21 @@ cc.Class({
           console.log(data);
           RoomInfos.rid = null;
           cc.director.loadScene("rooms");
-        });
+        })// .catch(function () {
+          //   console.log("Promise Rejected");
+          // });
       }
       if (data.data.Player1 != null && data.data.Player2 == null) {
         quitroombyIDasp1(roomID).then((data) => {
           console.log(data);
           RoomInfos.rid = null;
           cc.director.loadScene("rooms");
-        });
+        })// .catch(function () {
+          //   console.log("Promise Rejected");
+          // });
       }
+    }).catch(function () {
+      console.log("Promise Rejected");
     });
   },
   start() {},

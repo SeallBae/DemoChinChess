@@ -26,18 +26,20 @@ cc.Class({
 
     var id = this.id;
     (0, _socket_connection.receiveduserID)().then(function (data) {
-      uid = data;
+      var uid = data;
       var name = _this.namedisplay;
       (0, _axios_connection.getUserbyID)(uid).then(function (data) {
         id.string = data.data.Username + " #" + uid;
       })["catch"](function () {
         console.log("Promise Rejected");
       });
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   show_rooms: function show_rooms() {
     var listrooms = this.listrooms;
-    roomlist = [];
+    var roomlist = [];
     (0, _axios_connection.getroomlist)().then(function (data) {
       for (var i = 0; i < data.data.length; i++) {
         if (data.data[i].Player1 != null && data.data[i].Player2 != null) {
@@ -52,6 +54,8 @@ cc.Class({
       }
 
       listrooms.string = roomlist;
+    })["catch"](function () {
+      console.log("Promise Rejected");
     });
   },
   start: function start() {},

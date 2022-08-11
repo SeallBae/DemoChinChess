@@ -17,18 +17,20 @@ cc.Class({
   onLoad() {
     let id = this.id;
     receiveduserID().then((data) => {
-      uid = data;
+      let uid = data;
       let name = this.namedisplay;
       getUserbyID(uid).then((data) => {
         id.string = data.data.Username + " #" + uid;
       }).catch(function () {
         console.log("Promise Rejected");
       });
+    }).catch(function () {
+      console.log("Promise Rejected");
     });
   },
   show_rooms() {
     let listrooms = this.listrooms;
-    roomlist = [];
+    let roomlist = [];
     getroomlist().then((data) => {
       for (var i = 0; i < data.data.length; i++) {
         if (data.data[i].Player1 != null && data.data[i].Player2 != null) {
@@ -55,6 +57,9 @@ cc.Class({
         }
       }
       listrooms.string = roomlist;
+    })
+    .catch(function () {
+      console.log("Promise Rejected");
     });
   },
   start() {},

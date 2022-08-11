@@ -25,5 +25,6 @@ cc.Class({
 
   update(dt = 1000) {
     senduserID(this.uid);
+    cc.game.addPersistRootNode(this.node);
   },
 });

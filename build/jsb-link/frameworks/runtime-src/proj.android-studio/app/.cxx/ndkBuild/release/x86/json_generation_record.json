@@ -15,21 +15,35 @@
   },
   {
     "level": "INFO",
-    "message": "- expected json D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\.cxx\\ndkBuild\\release\\x86\\android_gradle_build.json file is not present, will remove stale json folder",
-    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-    "tag": "release|x86",
-    "diagnosticCode": "UNKNOWN"
-  },
-  {
-    "level": "INFO",
-    "message": "- missing previous command file D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\.cxx\\ndkBuild\\release\\x86\\build_command.txt, will remove stale json folder",
-    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
-    "tag": "release|x86",
-    "diagnosticCode": "UNKNOWN"
-  },
-  {
-    "level": "INFO",
     "message": "- command changed from previous, will remove stale json folder",
+    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "tag": "release|x86",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "- a dependent build file changed",
+    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "tag": "release|x86",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "  - D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "tag": "release|x86",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "  - D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Application.mk",
+    "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
+    "tag": "release|x86",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\.cxx\\ndkBuild\\release\\x86\u0027",
     "file": "D:\\CocosProjects\\DemoChinChess\\build\\jsb-link\\frameworks\\runtime-src\\proj.android-studio\\app\\jni\\Android.mk",
     "tag": "release|x86",
     "diagnosticCode": "UNKNOWN"
