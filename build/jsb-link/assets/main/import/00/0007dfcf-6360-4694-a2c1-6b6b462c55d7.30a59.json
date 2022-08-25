@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "fc3lCC41ZPMLToo0ehfx4g"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Path 126999",
+      "rect": [
+        13,
+        13,
+        1418,
+        1670
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1444,
+        1696
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

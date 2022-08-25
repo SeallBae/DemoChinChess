@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "32rVj64YVEXJ+UzpIKpAYg"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "hand-painted-watercolor-background",
+      "rect": [
+        0,
+        0,
+        1500,
+        3248
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1500,
+        3248
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

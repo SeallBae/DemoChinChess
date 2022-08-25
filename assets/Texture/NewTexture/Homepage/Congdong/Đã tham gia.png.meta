@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1ba94242-17e7-4703-a5cd-462187f226b3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 240,
+  "height": 76,
+  "platformSettings": {},
+  "subMetas": {
+    "Đã tham gia": {
+      "ver": "1.0.6",
+      "uuid": "d5d1a78a-c24a-475c-9946-f95677e84fb6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1ba94242-17e7-4703-a5cd-462187f226b3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -8.5,
+      "trimX": 1,
+      "trimY": 20,
+      "width": 235,
+      "height": 53,
+      "rawWidth": 240,
+      "rawHeight": 76,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

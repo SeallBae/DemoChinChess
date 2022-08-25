@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "1bqUJCF+dHA6XNRiGH8iaz"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Đã tham gia",
+      "rect": [
+        1,
+        20,
+        235,
+        53
+      ],
+      "offset": [
+        -1.5,
+        -8.5
+      ],
+      "originalSize": [
+        240,
+        76
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

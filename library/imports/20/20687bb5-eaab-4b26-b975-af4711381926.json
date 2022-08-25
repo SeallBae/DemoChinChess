@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Subtraction 63",
+    "texture": "9279e791-0301-4fb5-9453-60862fe1627d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1244,
+      165
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1244,
+      165
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

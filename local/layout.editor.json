@@ -13,12 +13,12 @@
         "type": "dock-h",
         "children": [
           {
-            "width": 430,
+            "width": 430.375,
             "height": 922,
             "type": "dock-v",
             "children": [
               {
-                "width": 430,
+                "width": 430.375,
                 "height": 460,
                 "type": "panel",
                 "active": 0,
@@ -27,7 +27,7 @@
                 ]
               },
               {
-                "width": 430,
+                "width": 430.375,
                 "height": 459,
                 "type": "panel",
                 "active": 0,
@@ -38,7 +38,7 @@
             ]
           },
           {
-            "width": 801,
+            "width": 801.234375,
             "height": 922,
             "type": "panel",
             "active": 0,
@@ -47,7 +47,7 @@
             ]
           },
           {
-            "width": 667,
+            "width": 666.375,
             "height": 922,
             "type": "panel",
             "active": 0,
@@ -66,15 +66,14 @@
         "cocos-services"
       ]
     },
-    "window-1660209446459": {},
-    " build-worker-worker": {}
+    "window-1661417577634": {}
   },
   "panels": {
     "console": {
       "x": 124,
       "y": 44,
-      "width": 1532,
-      "height": 897
+      "width": 1738,
+      "height": 919
     },
     "timeline": {
       "x": 560,
@@ -89,8 +88,8 @@
       "height": 539
     },
     "preferences": {
-      "x": 480,
-      "y": 116,
+      "x": 370,
+      "y": 142,
       "width": 953,
       "height": 572
     },
@@ -113,10 +112,28 @@
       "height": 586
     },
     "builder": {
-      "x": 683,
-      "y": 9,
+      "x": 1049,
+      "y": 44,
       "width": 640,
       "height": 962
+    },
+    "store": {
+      "x": 452,
+      "y": 140,
+      "width": 1016,
+      "height": 739
+    },
+    "node-library": {
+      "x": 1079,
+      "y": 164,
+      "width": 316,
+      "height": 519
+    },
+    "sprite-editor": {
+      "x": 702,
+      "y": 240,
+      "width": 516,
+      "height": 539
     }
   },
   "panelLabelWidth": {

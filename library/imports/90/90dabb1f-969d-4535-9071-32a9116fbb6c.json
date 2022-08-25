@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tienbox",
+    "texture": "bd23569e-c1c7-46e2-9be4-04a81d89910d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      508,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      508,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "cfadKqMXVL+KYYBcs/IoFt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Group 2892",
+      "rect": [
+        0,
+        0,
+        1308,
+        320
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1308,
+        320
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

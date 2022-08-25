@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Cộng đồng",
+    "texture": "8551ea78-e5b1-4cb8-80e1-a07b5eb1a068",
+    "atlas": "",
+    "rect": [
+      3,
+      19,
+      200,
+      54
+    ],
+    "offset": [
+      -1,
+      -8
+    ],
+    "originalSize": [
+      208,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

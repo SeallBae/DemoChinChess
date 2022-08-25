@@ -27,6 +27,9 @@ package org.cocos2dx.javascript;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import android.os.Bundle;
 
 import android.content.Intent;
@@ -92,6 +95,7 @@ public class AppActivity extends Cocos2dxActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         SDKWrapper.getInstance().onActivityResult(requestCode, resultCode, data);
+
     }
 
     @Override
@@ -134,6 +138,7 @@ public class AppActivity extends Cocos2dxActivity {
     protected void onSaveInstanceState(Bundle outState) {
         SDKWrapper.getInstance().onSaveInstanceState(outState);
         super.onSaveInstanceState(outState);
+
     }
 
     @Override
@@ -141,4 +146,6 @@ public class AppActivity extends Cocos2dxActivity {
         SDKWrapper.getInstance().onStart();
         super.onStart();
     }
+
+
 }

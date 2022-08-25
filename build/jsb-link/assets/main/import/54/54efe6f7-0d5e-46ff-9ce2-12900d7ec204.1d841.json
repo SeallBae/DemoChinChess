@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "94SjPnqedEA56uAeYAV4Jj"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Lịch sử",
+      "rect": [
+        1,
+        20,
+        138,
+        49
+      ],
+      "offset": [
+        0,
+        -6.5
+      ],
+      "originalSize": [
+        140,
+        76
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

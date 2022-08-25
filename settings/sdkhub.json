@@ -1,0 +1,53 @@
+{
+  "configSet": [
+    {
+      "id": "52e115",
+      "name": "HUAWEI  AppGallery Connect",
+      "platform": "3",
+      "channelID": "161221",
+      "channelName": "HUAWEI  AppGallery Connect",
+      "remarks": "",
+      "plugins": [
+        {
+          "hasParam": false,
+          "pParam": {},
+          "pId": "2412",
+          "pName": "HUAWEI_HMS",
+          "packageName": "huawei-hms",
+          "pType": 30,
+          "pUseType": 30,
+          "hasLocal": true,
+          "hasUpdate": false,
+          "requireParam": true,
+          "pVersion": "1.2.8_6.3.0",
+          "isInstall": false,
+          "installProgress": true
+        }
+      ]
+    },
+    {
+      "id": "9bb583",
+      "name": "Huawei",
+      "platform": "3",
+      "channelID": "161221",
+      "channelName": "HUAWEI  AppGallery Connect",
+      "remarks": "",
+      "plugins": [
+        {
+          "hasParam": false,
+          "pParam": {},
+          "pId": "2412",
+          "pName": "HUAWEI_HMS",
+          "pType": 30,
+          "pUseType": 30,
+          "packageName": "huawei-hms",
+          "hasLocal": true,
+          "hasUpdate": false,
+          "isInstall": false,
+          "requireParam": true,
+          "pVersion": "1.2.8_6.3.0"
+        }
+      ]
+    }
+  ]
+}

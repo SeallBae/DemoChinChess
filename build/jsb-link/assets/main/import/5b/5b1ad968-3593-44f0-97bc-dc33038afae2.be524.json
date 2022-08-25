@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "26w4Quk/BJwq3nX/moCsk1"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Group 2905",
+      "rect": [
+        2,
+        5,
+        570,
+        172
+      ],
+      "offset": [
+        -1,
+        -1
+      ],
+      "originalSize": [
+        576,
+        180
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

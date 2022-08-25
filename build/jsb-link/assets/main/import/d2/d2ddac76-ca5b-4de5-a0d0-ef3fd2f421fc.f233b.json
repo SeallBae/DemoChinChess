@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "12B7hm6qZKiKD0zVcW62uC"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Group 6503",
+      "rect": [
+        0,
+        0,
+        12,
+        360
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        12,
+        360
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

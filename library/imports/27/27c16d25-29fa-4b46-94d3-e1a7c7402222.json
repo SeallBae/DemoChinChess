@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Cài đặt",
+    "texture": "78d30093-a8ed-473e-835c-2bbd9e4b307a",
+    "atlas": "",
+    "rect": [
+      4,
+      20,
+      137,
+      49
+    ],
+    "offset": [
+      0.5,
+      -6.5
+    ],
+    "originalSize": [
+      144,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

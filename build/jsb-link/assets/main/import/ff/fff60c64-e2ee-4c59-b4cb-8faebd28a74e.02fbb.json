@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "22uLwv1KFJWbJC8RDugcPW"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Group 2907",
+      "rect": [
+        3,
+        13,
+        549,
+        165
+      ],
+      "offset": [
+        -0.5,
+        -5.5
+      ],
+      "originalSize": [
+        556,
+        180
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "39e47880-cecc-4422-aae5-6deebda64df2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1248,
+  "height": 164,
+  "platformSettings": {},
+  "subMetas": {
+    "Hãy liên kết tài khoản của bạn để đăng nhập dễ dàng hơn và tránh mất tài khoản. Liên kết ngay bây giờ!": {
+      "ver": "1.0.6",
+      "uuid": "26ff7395-bf80-4a18-bf22-466ba22fab87",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "39e47880-cecc-4422-aae5-6deebda64df2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -53.5,
+      "offsetY": -6.5,
+      "trimX": 3,
+      "trimY": 17,
+      "width": 1135,
+      "height": 143,
+      "rawWidth": 1248,
+      "rawHeight": 164,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

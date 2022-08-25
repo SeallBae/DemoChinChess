@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "22o+9PSShKSKkd47q/BzpW"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Group 6521",
+      "rect": [
+        6,
+        4,
+        324,
+        88
+      ],
+      "offset": [
+        3,
+        0
+      ],
+      "originalSize": [
+        330,
+        96
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Union 36",
+    "texture": "1bd7f675-d0e6-471d-8bd8-6282d35e50cc",
+    "atlas": "",
+    "rect": [
+      13,
+      13,
+      1418,
+      2682
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1444,
+      2708
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

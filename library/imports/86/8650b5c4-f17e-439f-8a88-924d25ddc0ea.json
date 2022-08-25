@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Nhapidphongbox",
+    "texture": "ea94142b-cf35-4b38-ac63-bd5d363e940e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      640,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      640,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

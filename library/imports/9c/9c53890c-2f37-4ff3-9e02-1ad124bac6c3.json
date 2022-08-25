@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "colorful-abstract-watercolor-circles-design-background-illustration",
+    "texture": "79a2fe23-9757-40e2-955d-a0e526df7beb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1308,
+      388
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1308,
+      388
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

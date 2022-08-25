@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ĐẤU CƯỢC VÀNG",
+    "texture": "1572240e-17df-423d-88c4-8c6746ddd071",
+    "atlas": "",
+    "rect": [
+      0,
+      6,
+      414,
+      73
+    ],
+    "offset": [
+      -1,
+      1.5
+    ],
+    "originalSize": [
+      416,
+      88
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

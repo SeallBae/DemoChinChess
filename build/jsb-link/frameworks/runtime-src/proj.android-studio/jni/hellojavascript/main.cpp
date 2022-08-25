@@ -29,6 +29,12 @@
 #include <jni.h>
 #include <android/log.h>
 
+#if SERVICE_SDKHUB
+#include "SDKHubManager.h"
+#endif
+    
+#include "PluginJniHelper.h"
+
 #define LOG_TAG "main"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 using namespace cocos2d;
@@ -37,7 +43,18 @@ using namespace cocos2d;
 void cocos_jni_env_init(JNIEnv *env)
 {
     LOGD("cocos_jni_env_init");
+#if SERVICE_SDKHUB
+    SDKHubManager::getInstance()->setJavaVM(env);
+#endif
 }
+
+//void cocos_android_app_init (JNIEnv* env, jobject thiz) {
+//    LOGD("cocos_android_app_init");
+//    AppDelegate *pAppDelegate = new AppDelegate();
+//    JavaVM* vm;
+//    env->GetJavaVM(&vm);
+//    PluginJniHelper::setJavaVM(vm);
+//}
 
 //called when onSurfaceCreated()
 Application *cocos_android_app_init(JNIEnv *env, int width, int height)

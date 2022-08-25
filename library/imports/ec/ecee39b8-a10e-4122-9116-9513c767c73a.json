@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hand-painted-watercolor-background",
+    "texture": "416d66ed-5b1f-4e3b-a4b8-58a7687d1230",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      375,
+      812
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      375,
+      812
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

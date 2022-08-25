@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tủ đồ",
+    "texture": "11ccd85e-c535-46b5-b41b-896e69c04ce9",
+    "atlas": "",
+    "rect": [
+      1,
+      19,
+      114,
+      42
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      116,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

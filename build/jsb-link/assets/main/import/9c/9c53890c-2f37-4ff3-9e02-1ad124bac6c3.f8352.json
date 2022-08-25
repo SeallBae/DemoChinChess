@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "79ov4jl1dA4pVdoOUm33vr"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "colorful-abstract-watercolor-circles-design-background-illustration",
+      "rect": [
+        0,
+        0,
+        1308,
+        388
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1308,
+        388
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

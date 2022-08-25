@@ -15,7 +15,7 @@ cc.Class({
   properties: {},
   onLoad: function onLoad() {},
   load_scene: function load_scene() {
-    cc.director.loadScene("rooms");
+    cc.director.loadScene("daucuocvangrooms");
   },
   start: function start() {} // update (dt) {},
 

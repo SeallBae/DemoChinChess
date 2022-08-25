@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Exclusion 4",
+    "texture": "c7eb0f39-19ae-421c-85fc-1de5c0929c07",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      292,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      292,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

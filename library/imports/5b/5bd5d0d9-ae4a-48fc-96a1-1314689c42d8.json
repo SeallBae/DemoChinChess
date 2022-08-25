@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Group 2973",
+    "texture": "481704d3-e111-4e98-ba99-badc3fab9033",
+    "atlas": "",
+    "rect": [
+      2,
+      0,
+      96,
+      100
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      100,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

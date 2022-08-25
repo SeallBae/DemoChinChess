@@ -15,6 +15,66 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+# facebook
+-keep public class com.facebook.** { *; }
+-dontwarn com.facebook.**
+# google play service
+-keep class com.google.android.gms.** { *; }
+-dontwarn com.google.android.gms.**
+-keep class com.google.protobuf.** { *; }
+-dontwarn com.google.protobuf.**
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+#sdkbox
+-keep class com.sdkbox.** { *; }
+-dontwarn com.sdkbox.**
+# facebook
+-keep public class com.facebook.** { *; }
+-dontwarn com.facebook.**
+#sdkbox
+-keep class com.sdkbox.** { *; }
+-dontwarn com.sdkbox.**
+# facebook
+-keep public class com.facebook.** { *; }
+-dontwarn com.facebook.**
+#sdkbox
+-keep class com.sdkbox.** { *; }
+-dontwarn com.sdkbox.**
+# facebook
+-keep public class com.facebook.** { *; }
+-dontwarn com.facebook.**
+# google play service
+-keep class com.google.android.gms.** { *; }
+-dontwarn com.google.android.gms.**
+-keep class com.google.protobuf.** { *; }
+-dontwarn com.google.protobuf.**
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+#sdkbox
+-keep class com.sdkbox.** { *; }
+-dontwarn com.sdkbox.**
 
 # Proguard Cocos2d-x-lite for release
 -keep public class org.cocos2dx.** { *; }
@@ -42,3 +102,8 @@
 # keep anysdk for release. you can comment if you are not using anysdk
 -keep public class com.anysdk.** { *; }
 -dontwarn com.anysdk.**
+
+# Proguard Cocos SDKHub for release
+-keep class com.cocos.sdkhub.** { *; }
+-dontwarn com.cocos.sdkhub.**
+    

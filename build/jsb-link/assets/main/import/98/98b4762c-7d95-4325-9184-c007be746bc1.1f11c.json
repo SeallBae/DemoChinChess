@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "15ciQOF99CPYjEjGdG3dBx"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "ĐẤU CƯỢC VÀNG",
+      "rect": [
+        0,
+        6,
+        414,
+        73
+      ],
+      "offset": [
+        -1,
+        1.5
+      ],
+      "originalSize": [
+        416,
+        88
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -14,7 +14,7 @@ cc.Class({
 
     onLoad () {},
     load_scene(){
-        cc.director.loadScene("rooms");
+        cc.director.loadScene("daucuocvangrooms");
     },
     start () {
 

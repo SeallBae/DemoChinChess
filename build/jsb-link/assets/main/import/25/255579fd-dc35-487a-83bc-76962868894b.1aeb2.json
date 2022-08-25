@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "85Uep45bFMuIDhoHtesaBo"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Cộng đồng",
+      "rect": [
+        3,
+        19,
+        200,
+        54
+      ],
+      "offset": [
+        -1,
+        -8
+      ],
+      "originalSize": [
+        208,
+        76
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

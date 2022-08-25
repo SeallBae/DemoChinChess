@@ -33,7 +33,18 @@
 #include "cocos/scripting/js-bindings/event/EventDispatcher.h"
 #include "cocos/scripting/js-bindings/manual/jsb_classtype.hpp"
 
+
+#define SERVICE_SDKHUB 1
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS) && SERVICE_SDKHUB
+//#include "SDKHub/SDKHubManager.h"
+#endif
+        
 USING_NS_CC;
+#ifdef SDKBOX_ENABLED
+#include "PluginFacebookJS.hpp"
+#include "PluginFacebookJSHelper.h"
+#endif
+
 
 AppDelegate::AppDelegate(int width, int height) : Application("Cocos Game", width, height)
 {
@@ -61,7 +72,17 @@ bool AppDelegate::applicationDidFinishLaunching()
     });
     
     jsb_register_all_modules();
-    
+//#ifdef SDKBOX_ENABLED
+//    se->addRegisterCallback(register_all_PluginFacebookJS);
+//    se->addRegisterCallback(register_all_PluginFacebookJS_helper);
+//#endif
+
+
+
+//#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS) && SERVICE_SDKHUB
+//    SDKHubManager::getInstance()->registerJSBCallback();
+//#endif
+        
     se->start();
     
     se::AutoHandleScope hs;

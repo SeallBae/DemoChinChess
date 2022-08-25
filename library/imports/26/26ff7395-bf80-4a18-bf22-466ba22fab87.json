@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Hãy liên kết tài khoản của bạn để đăng nhập dễ dàng hơn và tránh mất tài khoản",
+    "texture": "39e47880-cecc-4422-aae5-6deebda64df2",
+    "atlas": "",
+    "rect": [
+      3,
+      17,
+      1135,
+      143
+    ],
+    "offset": [
+      -53.5,
+      -6.5
+    ],
+    "originalSize": [
+      1248,
+      164
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

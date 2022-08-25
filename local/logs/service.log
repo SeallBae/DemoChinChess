@@ -1,0 +1,273 @@
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+#define SERVICE_SDKHUB 1
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS) && SERVICE_SDKHUB
+#include "SDKHub/SDKHubManager.h"
+#endif
+         to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" in line 35
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS) && SERVICE_SDKHUB
+    SDKHubManager::getInstance()->registerJSBCallback();
+#endif
+         to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" in line 80
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "$(call import-add-path, $(LOCAL_PATH)/jniLibs/) to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\CocosAndroid.mk" in line 0
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+    compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_8
+      targetCompatibility JavaVersion.VERSION_1_8
+    }
+     to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../app/build.gradle" in line 8
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	append code "
+# Proguard Cocos SDKHub for release
+-keep class com.cocos.sdkhub.** { *; }
+-dontwarn com.cocos.sdkhub.**
+     to "D:\CocosProjects\DemoChinChess\build\jsb-link/frameworks/runtime-src/proj.android-studio/app/proguard-rules.pro"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+#======================================
+#=====Cocos SDKHub Framework use segment=====
+ifeq ($(USE_SDKHUB),1)
+LOCAL_WHOLE_STATIC_LIBRARIES := SDKHub
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../Classes/SDKHub
+LOCAL_SRC_FILES += $(addprefix ../../Classes/SDKHub/, SDKHubManager.cpp )\
+$(addprefix ../../Classes/SDKHub/jsb_sdkhub_protocols_, manual.cpp auto.cpp)
+endif
+#======================================
+     to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\CocosAndroid.mk" in line 27
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	append code "
+#======================================
+#=====Cocos SDKHub Framework import segment=====
+ifeq ($(USE_SDKHUB),1)
+$(call import-module, SDKHub)
+endif
+#======================================
+ to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\CocosAndroid.mk"
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+USE_SDKHUB := 1
+ifeq ($(USE_SDKHUB),1)
+APP_CPPFLAGS += -DSERVICE_SDKHUB
+endif
+
+     to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\CocosApplication.mk" in line 39
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "
+#if SERVICE_SDKHUB
+#include "SDKHubManager.h"
+#endif
+     to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\hellojavascript\main.cpp" in line 29
+
+Cocos Service 8/23/2022, 4:37:21 PM DemoChinChess	insert code "#if SERVICE_SDKHUB
+    SDKHubManager::getInstance()->setJavaVM(env);
+#endif      to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\hellojavascript\main.cpp" in line 44
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/23/2022, 4:39:02 PM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/23/2022, 4:39:14 PM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/23/2022, 4:53:33 PM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:18:04 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:23:50 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:27:00 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:30:58 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:32:26 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 10:34:13 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 11:36:05 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/24/2022, 11:40:44 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	insert array element to "D:\CocosProjects\DemoChinChess\build\jsb-link\project.json" node of serviceClassPath
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/js-binding/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/src/android/ServiceSDKHub.java to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\src\org\cocos2dx\javascript\service\ServiceSDKHub.java"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	copy file "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/lib/libSDKHub.jar to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\libs\libSDKHub.jar"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	copy folder "C:\Users\GauGau\.CocosCreator\services\sdkhub/resources/sdk/android/SDKHub to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni\jniLibs\SDKHub"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	replace code "sdkhub::AgentManager::getInstance()->init("694094500"); to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\SDKHub\SDKHubManager.cpp" with regular "/sdkhub::AgentManager::getInstance\(\)->init\(".*"\);/"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	replace code "#define SERVICE_SDKHUB 1 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\Classes\AppDelegate.cpp" with regular "//#define SERVICE_SDKHUB 1"
+
+Cocos Service 8/25/2022, 9:13:08 AM DemoChinChess	replace code "PROP_MIN_SDK_VERSION=21 to "D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\jni/../gradle.properties" with regular "/PROP_MIN_SDK_VERSION=.*/"
+

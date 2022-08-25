@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "11zNhexTVGtbQbiW5pwEzp"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Tủ đồ",
+      "rect": [
+        1,
+        19,
+        114,
+        42
+      ],
+      "offset": [
+        0,
+        -2
+      ],
+      "originalSize": [
+        116,
+        76
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

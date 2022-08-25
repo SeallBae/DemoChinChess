@@ -1,5 +1,6 @@
 
 require('./assets/script/Blur');
+require('./assets/script/Login');
 require('./assets/script/Page/Login/LoginPage');
 require('./assets/script/PlayerInfo');
 require('./assets/script/Playnow');
@@ -26,6 +27,7 @@ require('./assets/script/board/touchmove');
 require('./assets/script/board/update');
 require('./assets/script/changescene/backtoroomlist');
 require('./assets/script/changescene/movetoboard');
+require('./assets/script/changescene/movetocotuong');
 require('./assets/script/changescene/movetohomepage');
 require('./assets/script/changescene/movetoroom');
 require('./assets/script/changescene/movetorooms');
@@ -46,3 +48,4 @@ require('./assets/script/room/showrooms');
 require('./assets/script/socket_connection');
 require('./assets/script/temp/deleteroom');
 require('./assets/script/temp/deleteuser');
+require('./assets/sdkhub/js-sdkhub');

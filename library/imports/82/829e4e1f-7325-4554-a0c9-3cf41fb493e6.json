@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Group 2236",
+    "texture": "f9ee705a-779d-4ef3-b832-7e09f9c3d3a3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      241,
+      89
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      241,
+      89
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
