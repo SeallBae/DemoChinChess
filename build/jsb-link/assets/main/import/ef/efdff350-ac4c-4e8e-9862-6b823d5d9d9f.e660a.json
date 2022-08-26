@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "3ayi2MrLFN872lUXyV9VqX"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Rectangle 250",
+      "rect": [
+        13,
+        13,
+        958,
+        398
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        984,
+        424
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

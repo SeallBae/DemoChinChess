@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Group 6354",
+    "texture": "499758e9-8c99-4a30-a9f0-28cfa8e12e6b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      128,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

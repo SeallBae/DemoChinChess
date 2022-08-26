@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Mask Group 2929",
+    "texture": "d6f12630-f9af-4497-9cb2-2c045274191a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      407,
+      292
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      407,
+      292
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

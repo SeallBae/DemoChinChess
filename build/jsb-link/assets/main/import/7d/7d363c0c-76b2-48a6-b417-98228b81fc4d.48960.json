@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "d68SYw+a9El5yyLARSdBka"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Mask Group 2929",
+      "rect": [
+        0,
+        0,
+        407,
+        292
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        407,
+        292
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

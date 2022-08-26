@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "aaPRc362tAzLCDn+Yl+lKZ"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "Rectangle 242",
+      "rect": [
+        0,
+        0,
+        460,
+        352
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        460,
+        352
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
