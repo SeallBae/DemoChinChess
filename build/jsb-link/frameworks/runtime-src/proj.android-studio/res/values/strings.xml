@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources>
-    <string name="app_name" translatable="false">ChineseChess</string>
-
-    <string name="facebook_app_id" translatable="false">3253378744948009</string>
-    <string name="fb_login_protocol_scheme" translatable="false">fb1234</string>
-    <string name="facebook_client_token" translatable="false">cb29185ec51ba931b34383138a01424b</string>
-    <string name="game_services_project_id" translatable="false"></string>
-</resources>

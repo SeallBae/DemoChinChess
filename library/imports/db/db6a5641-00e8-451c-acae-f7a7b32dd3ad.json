@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Red Horse",
+    "texture": "fd828539-05ce-44f4-98cc-00cab9a115f9",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      90,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      92
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

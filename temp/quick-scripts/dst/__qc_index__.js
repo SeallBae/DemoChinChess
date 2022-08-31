@@ -51,6 +51,7 @@ require('./assets/script/gameplay/readybutton');
 require('./assets/script/homepage/display');
 require('./assets/script/room/PrepareRoom/Sendchat');
 require('./assets/script/room/PrepareRoom/Showchat');
+require('./assets/script/room/PrepareRoom/ready');
 require('./assets/script/room/PrepareRoom/roominfo');
 require('./assets/script/room/RoomInfos');
 require('./assets/script/room/createroom');

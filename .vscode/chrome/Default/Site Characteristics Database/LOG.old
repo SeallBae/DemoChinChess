@@ -1,3 +1,5 @@
-2022/07/19-22:16:10.258 1014 Reusing MANIFEST E:\CocusProjects\DemoChineseChess\DemoChineseChess\.vscode\chrome\Default\Site Characteristics Database/MANIFEST-000001
-2022/07/19-22:16:10.309 1014 Recovering log #3
-2022/07/19-22:16:10.310 1014 Reusing old log E:\CocusProjects\DemoChineseChess\DemoChineseChess\.vscode\chrome\Default\Site Characteristics Database/000003.log 
+2022/08/31-16:19:15.672 4518 Log #3: 11 ops saved to Table #4 OK
+2022/08/31-16:19:15.766 4518 Archiving E:\CocusProjects\DemoChinChess\.vscode\chrome\Default\Site Characteristics Database/000003.log: OK
+2022/08/31-16:19:15.767 4518 Table #4: 11 entries OK
+2022/08/31-16:19:15.769 4518 Archiving E:\CocusProjects\DemoChinChess\.vscode\chrome\Default\Site Characteristics Database/MANIFEST-000001: OK
+2022/08/31-16:19:16.038 4518 **** Repaired leveldb E:\CocusProjects\DemoChinChess\.vscode\chrome\Default\Site Characteristics Database; recovered 1 files; 312 bytes. Some data may have been lost. ****

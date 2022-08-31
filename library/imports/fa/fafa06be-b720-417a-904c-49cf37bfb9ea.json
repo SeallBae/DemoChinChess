@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Pháo đen 1",
+    "texture": "0bde638b-54d9-4bde-9ce9-d5b6fe470cc4",
+    "atlas": "",
+    "rect": [
+      8,
+      8,
+      596,
+      608
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      612,
+      624
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Repeat Grid 1",
+    "texture": "c7258a00-c884-4d66-8afd-265ae475320e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1308,
+      636
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1308,
+      636
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -5,28 +5,23 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
-
-
 cc.Class({
-    extends: cc.Component,
+  extends: cc.Component,
 
-    properties: {
-        map:{
-            default: null,
-            type: cc.Node,
-        },
+  properties: {
+    map: {
+      default: null,
+      type: cc.Node,
     },
+  },
 
-    onLoad () {
-        let map = this.map.getComponent('boardinfo');
-    },
+  onLoad() {
+    let map = this.map.getComponent("boardinfo");
+  },
 
-    start () {
+  start() {},
 
-    },
-
-    update (dt) {
-        let map = this.map.getComponent('boardinfo');
-        this.node.height = map.countreddead*map.chesssize+100;
-    },
+  update(dt) {
+    let map = this.map.getComponent("boardinfo");
+  },
 });

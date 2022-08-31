@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tướng đen 1",
+    "texture": "af7bd149-700b-4bff-83a5-9e525a2b31d2",
+    "atlas": "",
+    "rect": [
+      8,
+      8,
+      596,
+      608
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      612,
+      624
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

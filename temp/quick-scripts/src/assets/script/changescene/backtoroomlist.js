@@ -31,7 +31,7 @@ cc.Class({
           (0, _axios_connection.quitfullroombyIDasp1)(roomID, p2).then(function (data) {
             console.log(data);
             RoomInfos.rid = null;
-            cc.director.loadScene("rooms");
+            cc.director.loadScene("daucuocvangrooms");
           }); // .catch(function () {
           //   console.log("Promise Rejected");
           // });
@@ -41,7 +41,7 @@ cc.Class({
           (0, _axios_connection.quitfullroombyIDasp2)(roomID).then(function (data) {
             console.log(data);
             RoomInfos.rid = null;
-            cc.director.loadScene("rooms");
+            cc.director.loadScene("daucuocvangrooms");
           }); // .catch(function () {
           //   console.log("Promise Rejected");
           // });
@@ -52,7 +52,7 @@ cc.Class({
         (0, _axios_connection.quitroombyIDasp2)(roomID).then(function (data) {
           console.log(data);
           RoomInfos.rid = null;
-          cc.director.loadScene("rooms");
+          cc.director.loadScene("daucuocvangrooms");
         }); // .catch(function () {
         //   console.log("Promise Rejected");
         // });
@@ -62,7 +62,7 @@ cc.Class({
         (0, _axios_connection.quitroombyIDasp1)(roomID).then(function (data) {
           console.log(data);
           RoomInfos.rid = null;
-          cc.director.loadScene("rooms");
+          cc.director.loadScene("daucuocvangrooms");
         }); // .catch(function () {
         //   console.log("Promise Rejected");
         // });

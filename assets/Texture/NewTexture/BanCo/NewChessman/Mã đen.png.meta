@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "620f5c59-cf30-4513-beae-1f0dbe6e1f0a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 612,
+  "height": 624,
+  "platformSettings": {},
+  "subMetas": {
+    "Mã đen": {
+      "ver": "1.0.6",
+      "uuid": "b3385f72-9257-4ec5-b903-4d30229e796c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "620f5c59-cf30-4513-beae-1f0dbe6e1f0a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 8,
+      "trimY": 8,
+      "width": 596,
+      "height": 608,
+      "rawWidth": 612,
+      "rawHeight": 624,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

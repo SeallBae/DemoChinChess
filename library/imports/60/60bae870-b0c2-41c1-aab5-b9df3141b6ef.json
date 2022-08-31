@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Group 7417",
+    "texture": "94233bc2-0aaf-4e1b-97b9-133750570740",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      128,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

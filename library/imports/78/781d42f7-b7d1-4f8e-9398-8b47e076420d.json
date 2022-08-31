@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Black Soldier",
+    "texture": "8922ad37-327c-4a8f-bb70-d752a566022b",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      90,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      92
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Union 43",
+    "texture": "09548015-a700-49c6-8f4b-86cbabb01433",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      186,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      186,
+      56
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

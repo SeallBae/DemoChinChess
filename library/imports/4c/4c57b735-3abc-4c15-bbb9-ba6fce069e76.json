@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Union 45",
+    "texture": "99148b2a-aabf-4a16-b49a-317f39d87dea",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      163,
+      54
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      163,
+      55
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

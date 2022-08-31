@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Mã đen 1",
+    "texture": "157864ff-d5a7-4091-a9f0-8a3b012ab627",
+    "atlas": "",
+    "rect": [
+      8,
+      8,
+      596,
+      608
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      612,
+      624
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

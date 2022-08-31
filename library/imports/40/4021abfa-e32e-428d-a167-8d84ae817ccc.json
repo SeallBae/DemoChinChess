@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Xe đen 1",
+    "texture": "d776d9ae-df3e-43bc-8d12-cc575b0919dd",
+    "atlas": "",
+    "rect": [
+      8,
+      8,
+      596,
+      608
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      612,
+      624
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Black Chariot",
+    "texture": "884d3885-0c1c-4e20-86fa-d7d6aaf1f2b4",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      90,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      92
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

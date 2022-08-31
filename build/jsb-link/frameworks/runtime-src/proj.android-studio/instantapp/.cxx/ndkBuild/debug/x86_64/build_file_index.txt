@@ -1,2 +1,0 @@
-D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\instantapp\jni\Android.mk
-D:\CocosProjects\DemoChinChess\build\jsb-link\frameworks\runtime-src\proj.android-studio\instantapp\jni\Application.mk

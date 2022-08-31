@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Chessboard 1",
+    "texture": "a4070b31-331e-4c21-a251-27d7f08a05e3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      950,
+      1104
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      951,
+      1104
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "InviteButton",
+    "texture": "784042f1-335d-4b18-aed4-e711cb9a3841",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      240,
+      128
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      240,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

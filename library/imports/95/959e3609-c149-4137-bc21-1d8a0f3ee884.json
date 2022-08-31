@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Cờ úp 2",
+    "texture": "5b2eac6e-f3e7-49fe-b6e1-24138f58a37a",
+    "atlas": "",
+    "rect": [
+      31,
+      3,
+      344,
+      318
+    ],
+    "offset": [
+      -12,
+      -1.5
+    ],
+    "originalSize": [
+      430,
+      321
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

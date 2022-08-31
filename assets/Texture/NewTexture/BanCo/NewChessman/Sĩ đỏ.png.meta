@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d327afa8-d1be-4bd0-baaf-6e7a21d8b60c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 612,
+  "height": 624,
+  "platformSettings": {},
+  "subMetas": {
+    "Sĩ đỏ": {
+      "ver": "1.0.6",
+      "uuid": "fc4a5878-fc27-4330-b858-85b6fb463a95",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d327afa8-d1be-4bd0-baaf-6e7a21d8b60c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 8,
+      "trimY": 8,
+      "width": 596,
+      "height": 608,
+      "rawWidth": 612,
+      "rawHeight": 624,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

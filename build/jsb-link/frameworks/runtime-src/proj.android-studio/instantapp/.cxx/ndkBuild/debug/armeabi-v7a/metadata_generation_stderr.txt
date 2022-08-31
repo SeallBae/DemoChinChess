@@ -1,2 +1,0 @@
-process_begin: CreateProcess(NULL, "", ...) failed.
-make: *** No rule to make target `D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/jni/../../jni/../../Classes/SDKBoxJSHelper.cpp', needed by `D:/CocosProjects/DemoChinChess/build/jsb-link/frameworks/runtime-src/proj.android-studio/instantapp/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/objs-debug/cocos2djs/__/__/Classes/SDKBoxJSHelper.o'.  Stop.

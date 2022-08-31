@@ -6,9 +6,11 @@
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 // import * as io from "socket.io-client";
 // let socket = io.connect('http://localhost:3000/');\
+import { getroombyID } from "../axios_connection";
 import {
   receivedchessPosition,
   receiveddeadchess,
+  receivedroomID,
   sendchessPosition,
 } from "../socket_connection";
 
@@ -45,6 +47,10 @@ cc.Class({
       type: cc.Node,
     },
     movelist: [],
+    rid: {
+      default: null,
+      type: cc.Label,
+    },
   },
 
   onLoad() {},
@@ -54,6 +60,12 @@ cc.Class({
   },
   start() {},
   update(dt = 10000) {
+    let PlayerInfo = cc.director
+      .getScene()
+      .getChildByName("PlayerInfo")
+      .getComponent("PlayerInfo");
+    console.log(PlayerInfo.uid);
+    var rid = this.rid.string;
     var redchess = this.redchess;
     var redc = redchess.getChildren();
     var blackchess = this.blackchess;
@@ -63,60 +75,95 @@ cc.Class({
     let deadblackchess = this.deadblackchess;
     var movecodelist = this.movecodelist;
 
-    receivedchessPosition().then((data) => {
-      for (var j = 0; j < redc.length; j++) {
-        if (redc[j].name == data[data.length - 1].name) {
-          redc[j].x = data[data.length - 1].x;
-          redc[j].y = data[data.length - 1].y;
-          redchess.pauseSystemEvents(true);
-          blackchess.resumeSystemEvents(true);
-          break;
+    receivedchessPosition()
+      .then((data) => {
+        for (var j = 0; j < redc.length; j++) {
+          if (
+            redc[j].name == data[data.length - 1].name &&
+            (redc[j].x != data[data.length - 1].x ||
+              redc[j].y != data[data.length - 1].y)
+          ) {
+            console.log(data[data.length - 1]);
+            redc[j].x = data[data.length - 1].x;
+            redc[j].y = data[data.length - 1].y;
+            getroombyID(rid).then((data) => {
+              if (data.data.Player1 == PlayerInfo.uid) {
+                redchess.pauseSystemEvents(true);
+                blackchess.pauseSystemEvents(true);
+              }
+              if (data.data.Player2 == PlayerInfo.uid) {
+                redchess.pauseSystemEvents(true);
+                blackchess.resumeSystemEvents(true);
+              }
+            });
+            // redchess.pauseSystemEvents(true);
+            // blackchess.resumeSystemEvents(true);
+            break;
+          }
         }
-      }
-      for (var k = 0; k < blackc.length; k++) {
-        if (blackc[k].name == data[data.length - 1].name) {
-          blackc[k].x = data[data.length - 1].x;
-          blackc[k].y = data[data.length - 1].y;
-          blackchess.pauseSystemEvents(true);
-          redchess.resumeSystemEvents(true);
-          break;
+        for (var k = 0; k < blackc.length; k++) {
+          if (
+            blackc[k].name == data[data.length - 1].name &&
+            (blackc[k].x != data[data.length - 1].x ||
+              blackc[k].y != data[data.length - 1].y)
+          ) {
+            blackc[k].x = data[data.length - 1].x;
+            blackc[k].y = data[data.length - 1].y;
+            getroombyID(rid).then((data) => {
+              if (data.data.Player1 == PlayerInfo.uid) {
+                redchess.resumeSystemEvents(true);
+                blackchess.pauseSystemEvents(true);
+              }
+              if (data.data.Player2 == PlayerInfo.uid) {
+                redchess.pauseSystemEvents(true);
+                blackchess.pauseSystemEvents(true);
+              }
+            });
+            // blackchess.pauseSystemEvents(true);
+            // redchess.resumeSystemEvents(true);
+            break;
+          }
         }
-      }
-      if (  
-        this.movelist.length == 0 ||
-        this.movelist[this.movelist.length - 1] !==
-          JSON.stringify(data[data.length - 1])
-      ) {
-        this.movelist.push(JSON.stringify(data[data.length - 1]));
-      }
-      movecodelist.string = this.movelist;
-    })
-    .catch(function () {
-      console.log("Promise Rejected");
-    });
-    receiveddeadchess().then((data) => {
-      for (var j = 0; j < redc.length; j++) {
-        if (redc[j].name == data.name) {
-          map.countreddead++;
-          redc[j].setScale(0.8, 0.8);
-          redc[j].x = 0;
-          redc[j].y = -30 - map.countreddead * (map.chesssize / 2);
-          redc[j].pauseSystemEvents(true);
-          redc[j].parent = deadredchess;
+        if (
+          this.movelist.length == 0 ||
+          this.movelist[this.movelist.length - 1] !==
+            JSON.stringify(data[data.length - 1])
+        ) {
+          this.movelist.push(JSON.stringify(data[data.length - 1]));
         }
-      }
-      for (var k = 0; k < blackc.length; k++) {
-        if (blackc[k].name == data.name) {
-          map.countblackdead++;
-          blackc[k].setScale(0.8, 0.8);
-          blackc[k].x = 0;
-          blackc[k].y = -30 - map.countblackdead * (map.chesssize / 2);
-          blackc[k].pauseSystemEvents(true);
-          blackc[k].parent = deadblackchess;
+        movecodelist.string = this.movelist;
+      })
+      .catch(function () {
+        console.log("Promise Rejected");
+      });
+    receiveddeadchess()
+      .then((data) => {
+        for (var j = 0; j < redc.length; j++) {
+          if (redc[j].name == data.name) {
+            map.countreddead++;
+            // redc[j].setScale(0.8, 0.8);
+            redc[j].anchorX = 1;
+            redc[j].anchorY = 0.5;
+            redc[j].y = 0;
+            redc[j].x = 187.5 - map.countreddead * map.chesssize;
+            redc[j].pauseSystemEvents(true);
+            redc[j].parent = deadredchess;
+          }
         }
-      }
-    }).catch(function () {
-      console.log("Promise Rejected");
-    });
+        for (var k = 0; k < blackc.length; k++) {
+          if (blackc[k].name == data.name) {
+            map.countblackdead++;
+            blackc[k].anchorX = 0;
+            blackc[k].anchorY = 0.5;
+            blackc[k].y = 0;
+            blackc[k].x = -187.5 + map.countblackdead * map.chesssize;
+            blackc[k].pauseSystemEvents(true);
+            blackc[k].parent = deadblackchess;
+          }
+        }
+      })
+      .catch(function () {
+        console.log("Promise Rejected");
+      });
   },
 });

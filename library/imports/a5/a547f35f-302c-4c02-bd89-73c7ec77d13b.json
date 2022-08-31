@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tốt đen",
+    "texture": "deff21f0-c79b-43a6-838f-3bbc467a02f7",
+    "atlas": "",
+    "rect": [
+      8,
+      8,
+      596,
+      608
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      612,
+      624
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

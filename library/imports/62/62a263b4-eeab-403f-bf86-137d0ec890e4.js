@@ -31,8 +31,8 @@ cc.Class({
     }
   },
   showpossiblemove: function showpossiblemove() {
-    var map = this.map.getComponent('boardinfo');
-    var touchmove = this.map.getComponent('touchmove');
+    var map = this.map.getComponent("boardinfo");
+    var touchmove = this.map.getComponent("touchmove");
     var place = this.place;
     var posmove = place.getChildren();
     var redchess = this.redchess;
@@ -54,8 +54,7 @@ cc.Class({
 
     for (var i = 0; i < posmove.length; i++) {
       if (posmove[i].y >= map.blackriver) {
-        console.log(map.blackriver); //upright
-
+        //upright
         if (posmove[i].x == self.node.x + map.s * 2 && posmove[i].y == self.node.y + map.s * 2) {
           posmove[i].active = true;
 

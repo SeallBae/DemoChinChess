@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Đang tìm đối thủ",
+    "texture": "731db085-1479-46d9-b05e-64a5b2b134a8",
+    "atlas": "",
+    "rect": [
+      1,
+      26,
+      486,
+      82
+    ],
+    "offset": [
+      0,
+      -11
+    ],
+    "originalSize": [
+      488,
+      112
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ee8bab5a-e5ca-4462-b37c-b3af36cecf7b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 951,
+  "height": 1104,
+  "platformSettings": {},
+  "subMetas": {
+    "Chessboard 2": {
+      "ver": "1.0.6",
+      "uuid": "7c75f2f3-2f3b-411e-843e-f9e9da772922",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ee8bab5a-e5ca-4462-b37c-b3af36cecf7b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 950,
+      "height": 1104,
+      "rawWidth": 951,
+      "rawHeight": 1104,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Cờ úp 1",
+    "texture": "a8f4d3e2-aa61-400f-8ead-48f23559e7f0",
+    "atlas": "",
+    "rect": [
+      11,
+      1,
+      118,
+      109
+    ],
+    "offset": [
+      -3.5,
+      -0.5
+    ],
+    "originalSize": [
+      147,
+      110
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

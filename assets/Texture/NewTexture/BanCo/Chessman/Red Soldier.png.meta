@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "54ac32be-1aa0-4352-ae4b-ae03b51b88b2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 92,
+  "height": 92,
+  "platformSettings": {},
+  "subMetas": {
+    "Red Soldier": {
+      "ver": "1.0.6",
+      "uuid": "0011f53c-86e6-4c9b-a909-447256da8087",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "54ac32be-1aa0-4352-ae4b-ae03b51b88b2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 90,
+      "height": 90,
+      "rawWidth": 92,
+      "rawHeight": 92,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

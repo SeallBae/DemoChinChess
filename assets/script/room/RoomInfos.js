@@ -15,6 +15,7 @@ cc.Class({
   start() {},
   onDisable() {},
   update(dt) {
+    cc.game.addPersistRootNode(this.node);
     sendroomID(this.rid);
   },
 });

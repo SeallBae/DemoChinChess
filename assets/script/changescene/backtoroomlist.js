@@ -30,52 +30,54 @@ cc.Class({
       .getChildByName("RoomInfos")
       .getComponent("RoomInfos");
 
-    let roomID = RoomInfos.rid;
-    getroombyID(roomID).then((data) => {
-      console.log(data);
-      if (data.data.Player1 != null && data.data.Player2 != null) {
-        if (data.data.Player1 == PlayerInfo.uid) {
-          let p2 = data.data.Player2;
-          quitfullroombyIDasp1(roomID, p2).then((data) => {
-            console.log(data);
-            RoomInfos.rid = null;
-            cc.director.loadScene("rooms");
-          })
-          // .catch(function () {
-          //   console.log("Promise Rejected");
-          // });
-        }
-        if (data.data.Player2 == PlayerInfo.uid) {
-          quitfullroombyIDasp2(roomID).then((data) => {
-            console.log(data);
-            RoomInfos.rid = null;
-            cc.director.loadScene("rooms");
-          })// .catch(function () {
+    var roomID = RoomInfos.rid;
+    getroombyID(roomID)
+      .then((data) => {
+        console.log(data);
+        if (data.data.Player1 != null && data.data.Player2 != null) {
+          if (data.data.Player1 == PlayerInfo.uid) {
+            let p2 = data.data.Player2;
+            quitfullroombyIDasp1(roomID, p2).then((data) => {
+              console.log(data);
+              RoomInfos.rid = null;
+              cc.director.loadScene("daucuocvangrooms");
+            });
+            // .catch(function () {
             //   console.log("Promise Rejected");
             // });
+          }
+          if (data.data.Player2 == PlayerInfo.uid) {
+            quitfullroombyIDasp2(roomID).then((data) => {
+              console.log(data);
+              RoomInfos.rid = null;
+              cc.director.loadScene("daucuocvangrooms");
+            }); // .catch(function () {
+            //   console.log("Promise Rejected");
+            // });
+          }
         }
-      }
-      if (data.data.Player1 == null && data.data.Player2 != null) {
-        quitroombyIDasp2(roomID).then((data) => {
-          console.log(data);
-          RoomInfos.rid = null;
-          cc.director.loadScene("rooms");
-        })// .catch(function () {
+        if (data.data.Player1 == null && data.data.Player2 != null) {
+          quitroombyIDasp2(roomID).then((data) => {
+            console.log(data);
+            RoomInfos.rid = null;
+            cc.director.loadScene("daucuocvangrooms");
+          }); // .catch(function () {
           //   console.log("Promise Rejected");
           // });
-      }
-      if (data.data.Player1 != null && data.data.Player2 == null) {
-        quitroombyIDasp1(roomID).then((data) => {
-          console.log(data);
-          RoomInfos.rid = null;
-          cc.director.loadScene("rooms");
-        })// .catch(function () {
+        }
+        if (data.data.Player1 != null && data.data.Player2 == null) {
+          quitroombyIDasp1(roomID).then((data) => {
+            console.log(data);
+            RoomInfos.rid = null;
+            cc.director.loadScene("daucuocvangrooms");
+          }); // .catch(function () {
           //   console.log("Promise Rejected");
           // });
-      }
-    }).catch(function () {
-      console.log("Promise Rejected");
-    });
+        }
+      })
+      .catch(function () {
+        console.log("Promise Rejected");
+      });
   },
   start() {},
   onDisable() {},

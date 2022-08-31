@@ -4,27 +4,19 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    Info: {
-      default: null,
-      type: cc.Label,
-    },
-    Player1: {
-      default: null,
-      type: cc.Label,
-    },
-    Player2: {
+    ID: {
       default: null,
       type: cc.Label,
     },
   },
   onLoad() {
-    let info = this.Info;
+    let ID = this.ID;
     let RoomInfos = cc.director
       .getScene()
       .getChildByName("RoomInfos")
       .getComponent("RoomInfos");
     var rid = RoomInfos.rid;
-    info.string = "Room no " + rid;
+    ID.string = rid;
   },
   start() {},
 

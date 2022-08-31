@@ -46,6 +46,10 @@ cc.Class({
     }).call(function () {
       _this.node.active = false;
     }).start();
+  },
+  disappear: function disappear() {
+    this.node.opacity = 0;
+    this.node.active = false;
   }
 });
 

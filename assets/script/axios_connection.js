@@ -1,10 +1,8 @@
-import "regenerator-runtime/runtime";
-import { async } from "regenerator-runtime";
 const axios = require("axios-creator");
 const urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 const urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
 
-const getuserlist = async () => {
+const getuserlist = () => {
   axios({
     method: "get",
     url: urlplayer,
@@ -13,7 +11,7 @@ const getuserlist = async () => {
   });
 };
 
-const deleteuser = async (id) => {
+const deleteuser = (id) => {
   axios({
     method: "delete",
     url: urlplayer + id,
@@ -22,7 +20,7 @@ const deleteuser = async (id) => {
   });
 };
 
-const createUser = async (username) => {
+const createUser = (username) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "post",
@@ -39,7 +37,7 @@ const createUser = async (username) => {
   });
 };
 
-const getUserbyID = async (id) => {
+const getUserbyID = (id) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
@@ -50,7 +48,7 @@ const getUserbyID = async (id) => {
   });
 };
 
-const getroomlist = async () => {
+const getroomlist = () => {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
@@ -61,46 +59,45 @@ const getroomlist = async () => {
   });
 };
 
-const createroom = async (uid) => {
+const createroom = (uid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "post",
       url: urlroom,
     }).then((response) => {
-      console.log(response);  
+      console.log(response);
       // var rid = response.data.data.id;
       axios({
         method: "patch",
         url: urlroom + "/" + response.data.data.id,
-        data:{
+        data: {
           Player1: uid,
         },
-      }).then(response=>{
+      }).then((response) => {
         console.log(response);
-      })
-      resolve(response.data.data.id) 
+      });
+      resolve(response.data.data.id);
     });
   });
 };
 
-const getroombyID = async (id) => {
+const getroombyID = (id) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "get",
       url: urlroom + "/" + id,
     }).then((response) => {
-      console.log(response);
       resolve(response.data);
     });
   });
 };
 
-const joinroombyIDasp1 = async (rid, uid) => {
+const joinroombyIDasp1 = (rid, uid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      data:{
+      data: {
         Player1: uid,
       },
     }).then((response) => {
@@ -108,12 +105,12 @@ const joinroombyIDasp1 = async (rid, uid) => {
     });
   });
 };
-const joinroombyIDasp2 = async (rid, uid) => {
+const joinroombyIDasp2 = (rid, uid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      data:{
+      data: {
         Player2: uid,
       },
     }).then((response) => {
@@ -121,12 +118,12 @@ const joinroombyIDasp2 = async (rid, uid) => {
     });
   });
 };
-const quitfullroombyIDasp1 = async (rid, uid) => {
+const quitfullroombyIDasp1 = (rid, uid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      data:{
+      data: {
         Player1: uid,
         Player2: null,
       },
@@ -135,12 +132,12 @@ const quitfullroombyIDasp1 = async (rid, uid) => {
     });
   });
 };
-const quitfullroombyIDasp2 = async (rid) => {
+const quitfullroombyIDasp2 = (rid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      data:{
+      data: {
         Player2: null,
       },
     }).then((response) => {
@@ -148,25 +145,22 @@ const quitfullroombyIDasp2 = async (rid) => {
     });
   });
 };
-const quitroombyIDasp1 = async (rid) => {
+const quitroombyIDasp1 = (rid) => {
   return new Promise((resolve, reject) => {
     axios({
-      method: "patch",
+      method: "delete",
       url: urlroom + "/" + rid,
-      data:{
-        Player1: null,
-      },
     }).then((response) => {
       resolve(response.data);
     });
   });
 };
-const quitroombyIDasp2 = async (rid) => {
+const quitroombyIDasp2 = (rid) => {
   return new Promise((resolve, reject) => {
     axios({
       method: "patch",
       url: urlroom + "/" + rid,
-      data:{
+      data: {
         Player2: null,
       },
     }).then((response) => {

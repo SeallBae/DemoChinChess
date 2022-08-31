@@ -6,9 +6,6 @@ cc._RF.push(module, '6323clwI0xJl4kOKrMKHG0j', 'joinroom');
 
 var _axios_connection = require("../axios_connection");
 
-var _require = require("socket.io-client"),
-    io = _require.io;
-
 // const fetch = require('node-fetch')
 cc.Class({
   "extends": cc.Component,

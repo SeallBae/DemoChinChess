@@ -5,21 +5,21 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
-      "width": 1920,
-      "height": 1040,
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 849,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 430.375,
-            "height": 922,
+            "width": 421.1125183105469,
+            "height": 717,
             "type": "dock-v",
             "children": [
               {
-                "width": 430.375,
-                "height": 460,
+                "width": 421.1125183105469,
+                "height": 388.45001220703125,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 430.375,
-                "height": 459,
+                "width": 421.1125183105469,
+                "height": 325.5500183105469,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,8 +38,8 @@
             ]
           },
           {
-            "width": 801.234375,
-            "height": 922,
+            "width": 635.1625366210938,
+            "height": 717,
             "type": "panel",
             "active": 0,
             "children": [
@@ -47,10 +47,10 @@
             ]
           },
           {
-            "width": 666.375,
-            "height": 922,
+            "width": 460.125,
+            "height": 717,
             "type": "panel",
-            "active": 1,
+            "active": 0,
             "children": [
               "inspector",
               "cocos-services"
@@ -65,15 +65,14 @@
         "inspector",
         "cocos-services"
       ]
-    },
-    "window-1661423223414": {}
+    }
   },
   "panels": {
     "console": {
-      "x": 124,
-      "y": 44,
-      "width": 1738,
-      "height": 919
+      "x": 48,
+      "y": 24,
+      "width": 1340,
+      "height": 692
     },
     "timeline": {
       "x": 560,
@@ -130,10 +129,10 @@
       "height": 519
     },
     "sprite-editor": {
-      "x": 702,
-      "y": 240,
-      "width": 516,
-      "height": 539
+      "x": 476,
+      "y": 102,
+      "width": 534,
+      "height": 546
     }
   },
   "panelLabelWidth": {

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bàn cờ",
+    "texture": "3fac65cf-dbb2-4c1e-bdfe-2a8ad80d1200",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      375,
+      414
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      376,
+      414
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

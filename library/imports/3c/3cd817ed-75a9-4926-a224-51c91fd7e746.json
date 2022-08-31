@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Cờ thế 2",
+    "texture": "5bb66581-b1b7-4ad6-8acb-cfbe7c402397",
+    "atlas": "",
+    "rect": [
+      4,
+      4,
+      372,
+      320
+    ],
+    "offset": [
+      -1,
+      -2
+    ],
+    "originalSize": [
+      382,
+      324
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

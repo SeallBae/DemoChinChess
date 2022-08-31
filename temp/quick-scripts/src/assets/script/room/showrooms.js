@@ -15,27 +15,24 @@ cc.Class({
     listrooms: {
       "default": null,
       type: cc.Label
-    },
-    id: {
-      "default": null,
-      type: cc.Label
-    }
-  },
-  onLoad: function onLoad() {
-    var _this = this;
+    } // id: {
+    //   default: null,
+    //   type: cc.Label,
+    // },
 
-    var id = this.id;
-    (0, _socket_connection.receiveduserID)().then(function (data) {
-      var uid = data;
-      var name = _this.namedisplay;
-      (0, _axios_connection.getUserbyID)(uid).then(function (data) {
-        id.string = data.data.Username + " #" + uid;
-      })["catch"](function () {
-        console.log("Promise Rejected");
-      });
-    })["catch"](function () {
-      console.log("Promise Rejected");
-    });
+  },
+  onLoad: function onLoad() {// let id = this.id;
+    // receiveduserID().then((data) => {
+    //   let uid = data;
+    //   let name = this.namedisplay;
+    //   getUserbyID(uid).then((data) => {
+    //     id.string = data.data.Username + " #" + uid;
+    //   }).catch(function () {
+    //     console.log("Promise Rejected");
+    //   });
+    // }).catch(function () {
+    //   console.log("Promise Rejected");
+    // });
   },
   show_rooms: function show_rooms() {
     var listrooms = this.listrooms;

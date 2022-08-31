@@ -18,6 +18,7 @@ cc.Class({
   start: function start() {},
   onDisable: function onDisable() {},
   update: function update(dt) {
+    cc.game.addPersistRootNode(this.node);
     (0, _socket_connection.sendroomID)(this.rid);
   }
 });

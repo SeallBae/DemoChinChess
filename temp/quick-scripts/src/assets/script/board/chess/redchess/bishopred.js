@@ -43,26 +43,7 @@ cc.Class({
     var blackc = blackchess.getChildren();
     redc.parent = place;
     blackc.parent = place;
-    self = this;
-    var uid = uid;
-    (0, _socket_connection.receivedroomID)().then(function (data) {
-      fetch("fetch(https://chinese-chess-vnp.herokuapp.com/api/room/" + data, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        }
-      }).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        console.log(data);
-        (0, _socket_connection.receiveduserID)().then(function (data) {
-          if (data == uid) {
-            console.log("uid p1", uid);
-          }
-        });
-      });
-    }); //deactive before another click
+    self = this; //deactive before another click
 
     for (var i = 0; i < posmove.length; i++) {
       if (posmove[i].active == true) {

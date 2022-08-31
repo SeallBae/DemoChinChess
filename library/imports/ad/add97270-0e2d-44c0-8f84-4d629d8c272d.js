@@ -113,14 +113,7 @@ cc.Class({
         for (var reset = 0; reset < posmove.length; reset++) {
           posmove[reset].setScale(1, 1);
           posmove[reset].active = false;
-        } //blackturn
-
-
-        blackchess.pauseSystemEvents(true); // console.log(blackchess.pauseSystemEvents);
-
-        redchess.pauseSystemEvents(true);
-        (0, _socket_connection.sendstate)("red");
-        updateall.updateall(); // updateall.updateall(self.node.name, self.node.x, self.node.y);
+        }
       }, posmove[i]);
     }
   },
@@ -181,14 +174,7 @@ cc.Class({
         for (var reset = 0; reset < posmove.length; reset++) {
           posmove[reset].setScale(1, 1);
           posmove[reset].active = false;
-        } //redturn
-        // newposition(self.node.name, self.node.x, self.node.y);
-
-
-        redchess.pauseSystemEvents(true);
-        blackchess.pauseSystemEvents(true); // movecodelist.updatelist();
-
-        updateall.updateall(); // updateall.updateall(self.node.name, self.node.x, self.node.y);
+        }
       }, posmove[i]);
     }
   },

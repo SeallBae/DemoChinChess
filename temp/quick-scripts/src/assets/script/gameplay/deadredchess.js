@@ -19,12 +19,11 @@ cc.Class({
     }
   },
   onLoad: function onLoad() {
-    var map = this.map.getComponent('boardinfo');
+    var map = this.map.getComponent("boardinfo");
   },
   start: function start() {},
   update: function update(dt) {
-    var map = this.map.getComponent('boardinfo');
-    this.node.height = map.countreddead * map.chesssize + 100;
+    var map = this.map.getComponent("boardinfo");
   }
 });
 

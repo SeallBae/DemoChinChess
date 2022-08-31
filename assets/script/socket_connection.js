@@ -1,5 +1,5 @@
 import * as io from "socket.io-client";
-const socket = io.connect("http://192.168.1.31:3000", {
+const socket = io.connect("http://192.168.1.6:3000", {
   reconnectionDelayMax: 10000,
   query: {
     userId: 10,
@@ -24,11 +24,9 @@ const sendroomID = (data) => {
   socket.emit("sendroomID", data);
 };
 
-const receivedroomID = () => {  
+const receivedroomID = () => {
   return new Promise((resolve, reject) => {
-    console.log("returnnew Promise run");
     socket.on("receivedroomID", (data) => {
-      console.log("receivedrooomID() run");
       resolve(data);
       reject("something wrong");
     });
@@ -38,13 +36,13 @@ const receivedroomID = () => {
 //chess moves field
 const chess = [];
 const sendchessPosition = (data) => {
-  socket.timeout(500).emit("sendChessPosition", data);
+  socket.emit("sendChessPosition", data);
 };
 const receivedchessPosition = function () {
   return new Promise((resolve, reject) => {
-    socket.once("receivedChessPosition", (data) => {
+    socket.on("receivedChessPosition", (data) => {
       chess.push(data[data.length - 1]);
-      resolve(chess);
+      resolve(data);
       reject("something wrong");
     });
   });
