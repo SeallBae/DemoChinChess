@@ -66,7 +66,6 @@ cc.Class({
     }
 
     var PlayerInfo = cc.director.getScene().getChildByName("PlayerInfo").getComponent("PlayerInfo");
-    console.log(PlayerInfo.uid);
     var rid = this.rid.string;
     var redchess = this.redchess;
     var redc = redchess.getChildren();
@@ -78,10 +77,20 @@ cc.Class({
     var movecodelist = this.movecodelist;
     (0, _socket_connection.receivedchessPosition)().then(function (data) {
       for (var j = 0; j < redc.length; j++) {
-        if (redc[j].name == data[data.length - 1].name && (redc[j].x != data[data.length - 1].x || redc[j].y != data[data.length - 1].y)) {
-          console.log(data[data.length - 1]);
-          redc[j].x = data[data.length - 1].x;
-          redc[j].y = data[data.length - 1].y;
+        if (redc[j].name == data[data.length - 1].name && (redc[j].x != data[data.length - 1].x || redc[j].y != data[data.length - 1].y || redc[j].x != data[data.length - 1].x && redc[j].y != data[data.length - 1].y)) {
+          //move chess
+          cc.tween(redc[j]).delay(0.1).to(0.125, {
+            position: cc.v2(data[data.length - 1].xed, data[data.length - 1].yed + 5),
+            scale: 1.1
+          }).delay(0.125).to(0.5, {
+            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y + 15),
+            scale: 1.3
+          }, {
+            easing: "backIn"
+          }).delay(0.125).to(0.125, {
+            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y),
+            scale: 1
+          }).start();
           (0, _axios_connection.getroombyID)(rid).then(function (data) {
             if (data.data.Player1 == PlayerInfo.uid) {
               redchess.pauseSystemEvents(true);
@@ -100,9 +109,20 @@ cc.Class({
       }
 
       for (var k = 0; k < blackc.length; k++) {
-        if (blackc[k].name == data[data.length - 1].name && (blackc[k].x != data[data.length - 1].x || blackc[k].y != data[data.length - 1].y)) {
-          blackc[k].x = data[data.length - 1].x;
-          blackc[k].y = data[data.length - 1].y;
+        if (blackc[k].name == data[data.length - 1].name && (blackc[k].x != data[data.length - 1].x || blackc[k].y != data[data.length - 1].y || blackc[k].x != data[data.length - 1].x && blackc[k].y != data[data.length - 1].y)) {
+          //move chess
+          cc.tween(blackc[k]).delay(0.1).to(0.125, {
+            position: cc.v2(data[data.length - 1].xed, data[data.length - 1].yed + 5),
+            scale: 1.1
+          }).delay(0.125).to(0.5, {
+            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y + 15),
+            scale: 1.3
+          }, {
+            easing: "backIn"
+          }).delay(0.125).to(0.125, {
+            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y),
+            scale: 1
+          }).start();
           (0, _axios_connection.getroombyID)(rid).then(function (data) {
             if (data.data.Player1 == PlayerInfo.uid) {
               redchess.resumeSystemEvents(true);
@@ -133,24 +153,36 @@ cc.Class({
         if (redc[j].name == data.name) {
           map.countreddead++; // redc[j].setScale(0.8, 0.8);
 
-          redc[j].anchorX = 1;
-          redc[j].anchorY = 0.5;
-          redc[j].y = 0;
-          redc[j].x = 187.5 - map.countreddead * map.chesssize;
-          redc[j].pauseSystemEvents(true);
-          redc[j].parent = deadredchess;
+          cc.tween(redc[j]).delay(1).to(0, {
+            position: cc.v2(187.5 - map.countreddead * map.chesssize, 0)
+          }).call(function () {
+            _this.node.pauseSystemEvents(true);
+
+            _this.node.parent = deadredchess;
+          }).start(); // redc[j].anchorX = 1;
+          // redc[j].anchorY = 0.5;
+          // redc[j].y = 0;
+          // redc[j].x = 187.5 - map.countreddead * map.chesssize;
+          // redc[j].pauseSystemEvents(true);
+          // redc[j].parent = deadredchess;
         }
       }
 
       for (var k = 0; k < blackc.length; k++) {
         if (blackc[k].name == data.name) {
           map.countblackdead++;
-          blackc[k].anchorX = 0;
-          blackc[k].anchorY = 0.5;
-          blackc[k].y = 0;
-          blackc[k].x = -187.5 + map.countblackdead * map.chesssize;
-          blackc[k].pauseSystemEvents(true);
-          blackc[k].parent = deadblackchess;
+          cc.tween(blackc[k]).delay(1).to(0, {
+            position: cc.v2(-187.5 + map.countblackdead * map.chesssize, 0)
+          }).call(function () {
+            _this.node.pauseSystemEvents(true);
+
+            _this.node.parent = deadblackchess;
+          }).start(); // blackc[k].anchorX = 0;
+          // blackc[k].anchorY = 0.5;
+          // blackc[k].y = 0;
+          // blackc[k].x = -187.5 + map.countblackdead * map.chesssize;
+          // blackc[k].pauseSystemEvents(true);
+          // blackc[k].parent = deadblackchess;
         }
       }
     })["catch"](function () {

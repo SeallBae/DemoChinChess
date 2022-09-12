@@ -68,6 +68,8 @@ cc.Class({
 
     if (posmove[i].active == true) {
       posmove[i].on("touchstart", function () {
+        var _this = this;
+
         if (self.node.isChildOf(redchess)) {
           var kill = 0;
 
@@ -77,18 +79,25 @@ cc.Class({
                 name: blackc[k].name
               });
               kill++;
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: this.x,
-                y: this.y
-              });
-              console.table(map.movecode);
-              (0, _socket_connection.sendchessPosition)(map.movecode); // console.log(self.node.name, this.x, this.y);
+              (0, _socket_connection.sendchessPosition)(map.movecode);
+              (0, _socket_connection.receivedchessPosition)().then(function (data) {
+                console.log(data);
+                map.movecode = data;
+                map.movecode.push({
+                  name: self.node.name,
+                  xed: self.node.x,
+                  yed: self.node.y,
+                  x: _this.x,
+                  y: _this.y
+                });
+              }).then(function (data) {
+                console.table(map.movecode);
+                (0, _socket_connection.sendchessPosition)(map.movecode);
+              }); // console.log(self.node.name, this.x, this.y);
               // const data = receivedchessPosition();
               // console.log(data);
 
+              redchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this["function"], posmove[i]);
               break;
@@ -96,15 +105,20 @@ cc.Class({
           }
 
           if (kill == 0) {
-            map.movecode.push({
-              name: self.node.name,
-              xed: self.node.x,
-              yed: self.node.y,
-              x: this.x,
-              y: this.y
-            });
-            console.table(map.movecode);
             (0, _socket_connection.sendchessPosition)(map.movecode);
+            (0, _socket_connection.receivedchessPosition)().then(function (data) {
+              map.movecode = data;
+              map.movecode.push({
+                name: self.node.name,
+                xed: self.node.x,
+                yed: self.node.y,
+                x: _this.x,
+                y: _this.y
+              });
+            }).then(function (data) {
+              console.table(map.movecode);
+              (0, _socket_connection.sendchessPosition)(map.movecode);
+            });
             this.setScale(1, 1);
             this.off("touchstart", this["function"], posmove[i]);
           }
@@ -132,6 +146,8 @@ cc.Class({
 
     if (posmove[i].active == true) {
       posmove[i].on("touchstart", function () {
+        var _this2 = this;
+
         if (self.node.isChildOf(blackchess)) {
           var kill = 0;
 
@@ -141,15 +157,22 @@ cc.Class({
                 name: redc[j].name
               });
               kill++;
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: this.x,
-                y: this.y
-              });
-              console.table(map.movecode);
               (0, _socket_connection.sendchessPosition)(map.movecode);
+              (0, _socket_connection.receivedchessPosition)().then(function (data) {
+                console.log(data);
+                map.movecode = data;
+                console.log(map.movecode);
+                map.movecode.push({
+                  name: self.node.name,
+                  xed: self.node.x,
+                  yed: self.node.y,
+                  x: _this2.x,
+                  y: _this2.y
+                });
+              }).then(function (data) {
+                console.table(map.movecode);
+                (0, _socket_connection.sendchessPosition)(map.movecChijode);
+              });
               this.setScale(1, 1);
               this.off("touchstart", this["function"], posmove[i]);
               break;
@@ -157,15 +180,21 @@ cc.Class({
           }
 
           if (kill == 0) {
-            map.movecode.push({
-              name: self.node.name,
-              xed: self.node.x,
-              yed: self.node.y,
-              x: this.x,
-              y: this.y
-            });
-            console.table(map.movecode);
             (0, _socket_connection.sendchessPosition)(map.movecode);
+            (0, _socket_connection.receivedchessPosition)().then(function (data) {
+              map.movecode = data;
+              map.movecode.push({
+                name: self.node.name,
+                xed: self.node.x,
+                yed: self.node.y,
+                x: _this2.x,
+                y: _this2.y
+              });
+            }).then(function (data) {
+              console.table(map.movecode);
+              (0, _socket_connection.sendchessPosition)(map.movecode);
+            });
+            blackchess.pauseSystemEvents(true);
             this.setScale(1, 1);
             this.off("touchstart", this["function"], posmove[i]);
           }

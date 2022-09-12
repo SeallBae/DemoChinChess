@@ -1,8 +1,7 @@
 {
 	"game": {
-		"name": "DemoChineseChess",
-		"appid": "694094500",
-		"cid": 0
+		"name": "UNKNOW GAME",
+		"appid": "UNKNOW"
 	},
 	"needExecNative": true,
 	"configs": [
@@ -55,6 +54,9 @@
 					"enable": false
 				}
 			]
+		},
+		{
+			"appid": "UNKNOW"
 		}
 	]
 }

@@ -79,34 +79,50 @@ cc.Class({
                   name: blackc[k].name,
                 });
                 kill++;
-                map.movecode.push({
-                  name: self.node.name,
-                  xed: self.node.x,
-                  yed: self.node.y,
-                  x: this.x,
-                  y: this.y,
-                });
-                console.table(map.movecode);
                 sendchessPosition(map.movecode);
+                receivedchessPosition()
+                  .then((data) => {
+                    console.log(data);
+                    map.movecode = data;
+                    map.movecode.push({
+                      name: self.node.name,
+                      xed: self.node.x,
+                      yed: self.node.y,
+                      x: this.x,
+                      y: this.y,
+                    });
+                  })
+                  .then((data) => {
+                    console.table(map.movecode);
+                    sendchessPosition(map.movecode);
+                  });
+
                 // console.log(self.node.name, this.x, this.y);
                 // const data = receivedchessPosition();
                 // console.log(data);
-
+                redchess.pauseSystemEvents(true);
                 this.setScale(1, 1);
                 this.off("touchstart", this.function, posmove[i]);
                 break;
               }
             }
             if (kill == 0) {
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: this.x,
-                y: this.y,
-              });
-              console.table(map.movecode);
               sendchessPosition(map.movecode);
+              receivedchessPosition()
+                .then((data) => {
+                  map.movecode = data;
+                  map.movecode.push({
+                    name: self.node.name,
+                    xed: self.node.x,
+                    yed: self.node.y,
+                    x: this.x,
+                    y: this.y,
+                  });
+                })
+                .then((data) => {
+                  console.table(map.movecode);
+                  sendchessPosition(map.movecode);
+                });
               this.setScale(1, 1);
               this.off("touchstart", this.function, posmove[i]);
             }
@@ -145,30 +161,47 @@ cc.Class({
                 });
 
                 kill++;
-                map.movecode.push({
-                  name: self.node.name,
-                  xed: self.node.x,
-                  yed: self.node.y,
-                  x: this.x,
-                  y: this.y,
-                });
-                console.table(map.movecode);
                 sendchessPosition(map.movecode);
+                receivedchessPosition()
+                  .then((data) => {
+                    console.log(data);
+                    map.movecode = data;
+                    console.log(map.movecode);
+                    map.movecode.push({
+                      name: self.node.name,
+                      xed: self.node.x,
+                      yed: self.node.y,
+                      x: this.x,
+                      y: this.y,
+                    });
+                  })
+                  .then((data) => {
+                    console.table(map.movecode);
+                    sendchessPosition(map.movecChijode);
+                  });
                 this.setScale(1, 1);
                 this.off("touchstart", this.function, posmove[i]);
                 break;
               }
             }
             if (kill == 0) {
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: this.x,
-                y: this.y,
-              });
-              console.table(map.movecode);
               sendchessPosition(map.movecode);
+              receivedchessPosition()
+                .then((data) => {
+                  map.movecode = data;
+                  map.movecode.push({
+                    name: self.node.name,
+                    xed: self.node.x,
+                    yed: self.node.y,
+                    x: this.x,
+                    y: this.y,
+                  });
+                })
+                .then((data) => {
+                  console.table(map.movecode);
+                  sendchessPosition(map.movecode);
+                });
+              blackchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this.function, posmove[i]);
             }
