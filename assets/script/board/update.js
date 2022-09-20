@@ -1,12 +1,4 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-// import * as io from "socket.io-client";
-// let socket = io.connect('http://localhost:3000/');\
-import { getroombyID } from "../axios_connection";
+import { getlastmovehistory, getroombyID } from "../axios_connection";
 import {
   receivedchessPosition,
   receiveddeadchess,
@@ -54,17 +46,17 @@ cc.Class({
   },
 
   onLoad() {},
-  updateall() {
-    // let map = this.map.getComponent("boardinfo");
-    // list += JSON.stringify(map.movecode[map.movecode.length - 1]) + "\n";
-  },
   start() {},
   update(dt = 10000) {
     let PlayerInfo = cc.director
       .getScene()
       .getChildByName("PlayerInfo")
       .getComponent("PlayerInfo");
-    var rid = this.rid.string;
+    let RoomInfos = cc.director
+      .getScene()
+      .getChildByName("RoomInfos")
+      .getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     var redchess = this.redchess;
     var redc = redchess.getChildren();
     var blackchess = this.blackchess;
@@ -75,22 +67,20 @@ cc.Class({
     var movecodelist = this.movecodelist;
 
     receivedchessPosition()
-      .then((data) => {
+      .then((data) => { 
+        console.log("dataname" + data.Name);
+        
         for (var j = 0; j < redc.length; j++) {
           if (
-            redc[j].name == data[data.length - 1].name &&
-            (redc[j].x != data[data.length - 1].x ||
-              redc[j].y != data[data.length - 1].y ||
-              (redc[j].x != data[data.length - 1].x &&
-                redc[j].y != data[data.length - 1].y))
+            redc[j].name == data.Name
           ) {
             //move chess
             cc.tween(redc[j])
               .delay(0.1)
               .to(0.125, {
                 position: cc.v2(
-                  data[data.length - 1].xed,
-                  data[data.length - 1].yed + 5
+                  data.Xed,
+                  data.Yed + 5
                 ),
                 scale: 1.1,
               })
@@ -99,8 +89,8 @@ cc.Class({
                 0.5,
                 {
                   position: cc.v2(
-                    data[data.length - 1].x,
-                    data[data.length - 1].y + 15
+                    data.X,
+                    data.Y + 15
                   ),
                   scale: 1.3,
                 },
@@ -109,8 +99,8 @@ cc.Class({
               .delay(0.125)
               .to(0.125, {
                 position: cc.v2(
-                  data[data.length - 1].x,
-                  data[data.length - 1].y
+                  data.X,
+                  data.Y,
                 ),
                 scale: 1,
               })
@@ -126,26 +116,21 @@ cc.Class({
                 blackchess.resumeSystemEvents(true);
               }
             });
-            // redchess.pauseSystemEvents(true);
-            // blackchess.resumeSystemEvents(true);
             break;
           }
         }
+
         for (var k = 0; k < blackc.length; k++) {
           if (
-            blackc[k].name == data[data.length - 1].name &&
-            (blackc[k].x != data[data.length - 1].x ||
-              blackc[k].y != data[data.length - 1].y ||
-              (blackc[k].x != data[data.length - 1].x &&
-                blackc[k].y != data[data.length - 1].y))
+            blackc[k].name == data.Name
           ) {
             //move chess
             cc.tween(blackc[k])
               .delay(0.1)
               .to(0.125, {
                 position: cc.v2(
-                  data[data.length - 1].xed,
-                  data[data.length - 1].yed + 5
+                  data.Xed,
+                  data.Yed + 5
                 ),
                 scale: 1.1,
               })
@@ -154,8 +139,8 @@ cc.Class({
                 0.5,
                 {
                   position: cc.v2(
-                    data[data.length - 1].x,
-                    data[data.length - 1].y + 15
+                    data.X,
+                    data.Y + 15
                   ),
                   scale: 1.3,
                 },
@@ -164,12 +149,13 @@ cc.Class({
               .delay(0.125)
               .to(0.125, {
                 position: cc.v2(
-                  data[data.length - 1].x,
-                  data[data.length - 1].y
+                  data.X,
+                  data.Y
                 ),
                 scale: 1,
               })
               .start();
+
             getroombyID(rid).then((data) => {
               if (data.data.Player1 == PlayerInfo.uid) {
                 redchess.resumeSystemEvents(true);
@@ -180,23 +166,24 @@ cc.Class({
                 blackchess.pauseSystemEvents(true);
               }
             });
-            // blackchess.pauseSystemEvents(true);
-            // redchess.resumeSystemEvents(true);
             break;
           }
         }
-        if (
-          this.movelist.length == 0 ||
-          this.movelist[this.movelist.length - 1] !==
-            JSON.stringify(data[data.length - 1])
-        ) {
-          this.movelist.push(JSON.stringify(data[data.length - 1]));
-        }
-        movecodelist.string = this.movelist;
+
+        // if (
+        //   this.movelist.length == 0 ||
+        //   this.movelist[this.movelist.length - 1] !==
+        //     JSON.stringify(data[data.length - 1])
+        // ) {
+        //   this.movelist.push(JSON.stringify(data[data.length - 1]));
+        // }
+        // movecodelist.string = this.movelist;
+
       })
       .catch(function () {
         console.log("Promise Rejected");
       });
+
     receiveddeadchess()
       .then((data) => {
         for (var j = 0; j < redc.length; j++) {

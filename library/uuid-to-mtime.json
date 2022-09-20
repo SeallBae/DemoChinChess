@@ -4784,24 +4784,24 @@
     "meta": 1661930925744,
     "relativePath": "script\\board\\boardinfo.js"
   },
-  "077bf6c5-c74b-4010-ab6b-0ca4737570fd": {
-    "asset": 1662950634198,
-    "meta": 1662950676774,
-    "relativePath": "script\\board\\update.js"
-  },
-  "f2074448-e024-44ee-bcb7-fca51b7f25b5": {
-    "asset": 1663060252252,
-    "meta": 1663060255088,
-    "relativePath": "script\\socket_connection.js"
+  "fbfbfaa8-1ea8-48e9-988a-2501e34ed32a": {
+    "asset": 1663665394927,
+    "meta": 1663665397890,
+    "relativePath": "script\\axios_connection.js"
   },
   "add97270-0e2d-44c0-8f84-4d629d8c272d": {
-    "asset": 1663566157195,
-    "meta": 1663566282170,
+    "asset": 1663665851066,
+    "meta": 1663665853962,
     "relativePath": "script\\board\\touchmove.js"
   },
-  "fbfbfaa8-1ea8-48e9-988a-2501e34ed32a": {
-    "asset": 1663659396316,
-    "meta": 1663659405425,
-    "relativePath": "script\\axios_connection.js"
+  "f2074448-e024-44ee-bcb7-fca51b7f25b5": {
+    "asset": 1663665691051,
+    "meta": 1663665854410,
+    "relativePath": "script\\socket_connection.js"
+  },
+  "077bf6c5-c74b-4010-ab6b-0ca4737570fd": {
+    "asset": 1663670416903,
+    "meta": 1663670740713,
+    "relativePath": "script\\board\\update.js"
   }
 }

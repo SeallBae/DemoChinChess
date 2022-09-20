@@ -55,7 +55,6 @@ var receivedroomID = function receivedroomID() {
 
 
 exports.receivedroomID = receivedroomID;
-var chess = [];
 
 var sendchessPosition = function sendchessPosition(data) {
   socket.emit("sendChessPosition", data);
@@ -66,7 +65,6 @@ exports.sendchessPosition = sendchessPosition;
 var receivedchessPosition = function receivedchessPosition() {
   return new Promise(function (resolve, reject) {
     socket.on("receivedChessPosition", function (data) {
-      chess.push(data[data.length - 1]);
       resolve(data);
       reject("something wrong");
     });

@@ -5,7 +5,7 @@
 //     },
 //   });
 
-import { createmovehistory, getmovehistory } from "../axios_connection";
+import { createmovehistory, getmovehistory,getlastmovehistory } from "../axios_connection";
 import {
   receivedchessPosition,
   sendchessPosition,
@@ -60,6 +60,7 @@ cc.Class({
       .getScene()
       .getChildByName("RoomInfos")
       .getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     let updateall = this.updateall.getComponent("update");
     let map = this.map.getComponent("boardinfo");
     let deadblackchess = this.deadblackchess;
@@ -101,10 +102,9 @@ cc.Class({
               //     console.table(map.movecode);
               //     sendchessPosition(map.movecode);
               //   });
-                createmovehistory(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
-                  getmovehistory(RoomInfos).then(data=>{
-                    console.log(data);
-                    console.log(RoomInfos.rid);
+                createmovehistory(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
+                  getlastmovehistory(rid).then(data=>{
+                    sendchessPosition(data);
                   })
                 });
                 
@@ -132,10 +132,9 @@ cc.Class({
               //     console.table(map.movecode);
               //     sendchessPosition(map.movecode);
               //   });
-              createmovehistory(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
-                getmovehistory(RoomInfos).then(data=>{
-                  console.log(data);
-                  console.log(RoomInfos.rid);
+              createmovehistory(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
+                getlastmovehistory(rid).then(data=>{
+                  sendchessPosition(data);
                 })
               });
 
@@ -158,6 +157,7 @@ cc.Class({
       .getScene()
       .getChildByName("RoomInfos")
       .getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     let updateall = this.updateall.getComponent("update");
     let map = this.map.getComponent("boardinfo");
     let deadredchess = this.deadredchess;
@@ -200,13 +200,13 @@ cc.Class({
                 //     console.table(map.movecode);
                 //     sendchessPosition(map.movecChijode);
                 //   });
-                  blackchess.pauseSystemEvents(true);
-                createmovehistory(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
-                  getmovehistory(RoomInfos).then(data=>{
-                    console.log(data);
-                  })
-                });
+                createmovehistory(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
+                    getlastmovehistory(rid).then(data=>{
+                      sendchessPosition(data);
+                    })
+                  });
 
+                blackchess.pauseSystemEvents(true);
                 this.setScale(1, 1);
                 this.off("touchstart", this.function, posmove[i]);
                 break;
@@ -230,9 +230,9 @@ cc.Class({
               //     console.table(map.movecode);
               //     sendchessPosition(map.movecode);
               //   });
-              createmovehistory(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
-                getmovehistory(RoomInfos).then(data=>{
-                  console.log(data);
+              createmovehistory(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
+                getlastmovehistory(rid).then(data=>{
+                  sendchessPosition(data);
                 })
               });
 

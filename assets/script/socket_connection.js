@@ -34,14 +34,12 @@ const receivedroomID = () => {
 };
 
 //chess moves field
-const chess = [];
 const sendchessPosition = (data) => {
   socket.emit("sendChessPosition", data);
 };
 const receivedchessPosition = function () {
   return new Promise((resolve, reject) => {
     socket.on("receivedChessPosition", (data) => {
-      chess.push(data[data.length - 1]);
       resolve(data);
       reject("something wrong");
     });

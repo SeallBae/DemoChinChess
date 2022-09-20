@@ -8,14 +8,6 @@ var _axios_connection = require("../axios_connection");
 
 var _socket_connection = require("../socket_connection");
 
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-// import * as io from "socket.io-client";
-// let socket = io.connect('http://localhost:3000/');\
 cc.Class({
   "extends": cc.Component,
   properties: {
@@ -54,9 +46,6 @@ cc.Class({
     }
   },
   onLoad: function onLoad() {},
-  updateall: function updateall() {// let map = this.map.getComponent("boardinfo");
-    // list += JSON.stringify(map.movecode[map.movecode.length - 1]) + "\n";
-  },
   start: function start() {},
   update: function update(dt) {
     var _this = this;
@@ -66,7 +55,8 @@ cc.Class({
     }
 
     var PlayerInfo = cc.director.getScene().getChildByName("PlayerInfo").getComponent("PlayerInfo");
-    var rid = this.rid.string;
+    var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     var redchess = this.redchess;
     var redc = redchess.getChildren();
     var blackchess = this.blackchess;
@@ -76,19 +66,21 @@ cc.Class({
     var deadblackchess = this.deadblackchess;
     var movecodelist = this.movecodelist;
     (0, _socket_connection.receivedchessPosition)().then(function (data) {
+      console.log("dataname" + data.Name);
+
       for (var j = 0; j < redc.length; j++) {
-        if (redc[j].name == data[data.length - 1].name && (redc[j].x != data[data.length - 1].x || redc[j].y != data[data.length - 1].y || redc[j].x != data[data.length - 1].x && redc[j].y != data[data.length - 1].y)) {
+        if (redc[j].name == data.Name) {
           //move chess
           cc.tween(redc[j]).delay(0.1).to(0.125, {
-            position: cc.v2(data[data.length - 1].xed, data[data.length - 1].yed + 5),
+            position: cc.v2(data.Xed, data.Yed + 5),
             scale: 1.1
           }).delay(0.125).to(0.5, {
-            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y + 15),
+            position: cc.v2(data.X, data.Y + 15),
             scale: 1.3
           }, {
             easing: "backIn"
           }).delay(0.125).to(0.125, {
-            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y),
+            position: cc.v2(data.X, data.Y),
             scale: 1
           }).start();
           (0, _axios_connection.getroombyID)(rid).then(function (data) {
@@ -101,26 +93,24 @@ cc.Class({
               redchess.pauseSystemEvents(true);
               blackchess.resumeSystemEvents(true);
             }
-          }); // redchess.pauseSystemEvents(true);
-          // blackchess.resumeSystemEvents(true);
-
+          });
           break;
         }
       }
 
       for (var k = 0; k < blackc.length; k++) {
-        if (blackc[k].name == data[data.length - 1].name && (blackc[k].x != data[data.length - 1].x || blackc[k].y != data[data.length - 1].y || blackc[k].x != data[data.length - 1].x && blackc[k].y != data[data.length - 1].y)) {
+        if (blackc[k].name == data.Name) {
           //move chess
           cc.tween(blackc[k]).delay(0.1).to(0.125, {
-            position: cc.v2(data[data.length - 1].xed, data[data.length - 1].yed + 5),
+            position: cc.v2(data.Xed, data.Yed + 5),
             scale: 1.1
           }).delay(0.125).to(0.5, {
-            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y + 15),
+            position: cc.v2(data.X, data.Y + 15),
             scale: 1.3
           }, {
             easing: "backIn"
           }).delay(0.125).to(0.125, {
-            position: cc.v2(data[data.length - 1].x, data[data.length - 1].y),
+            position: cc.v2(data.X, data.Y),
             scale: 1
           }).start();
           (0, _axios_connection.getroombyID)(rid).then(function (data) {
@@ -133,18 +123,18 @@ cc.Class({
               redchess.pauseSystemEvents(true);
               blackchess.pauseSystemEvents(true);
             }
-          }); // blackchess.pauseSystemEvents(true);
-          // redchess.resumeSystemEvents(true);
-
+          });
           break;
         }
-      }
+      } // if (
+      //   this.movelist.length == 0 ||
+      //   this.movelist[this.movelist.length - 1] !==
+      //     JSON.stringify(data[data.length - 1])
+      // ) {
+      //   this.movelist.push(JSON.stringify(data[data.length - 1]));
+      // }
+      // movecodelist.string = this.movelist;
 
-      if (_this.movelist.length == 0 || _this.movelist[_this.movelist.length - 1] !== JSON.stringify(data[data.length - 1])) {
-        _this.movelist.push(JSON.stringify(data[data.length - 1]));
-      }
-
-      movecodelist.string = _this.movelist;
     })["catch"](function () {
       console.log("Promise Rejected");
     });

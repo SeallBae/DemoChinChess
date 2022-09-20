@@ -215,14 +215,13 @@ var createmovehistory = function createmovehistory(rid, name, xed, yed, x, y) {
   return new Promise(function (resolve, reject) {
     axios({
       method: "post",
-      url: urlmovehistory + "/new/" + 40,
+      url: urlmovehistory + "/new/" + rid,
       data: {
-        Move: "totdentdithang",
-        Name: "totdo",
-        Xed: 0,
-        Yed: 10,
-        X: 0,
-        Y: 0
+        Name: name,
+        Xed: xed,
+        Yed: yed,
+        X: x,
+        Y: y
       }
     }).then(function (response) {
       console.log(response.data);
@@ -237,7 +236,7 @@ var getmovehistory = function getmovehistory(rid) {
   return new Promise(function (resolve, reject) {
     axios({
       method: "get",
-      url: urlmovehistory + "/" + 40
+      url: urlmovehistory + "/" + rid
     }).then(function (response) {
       resolve(response.data);
     });
@@ -252,7 +251,7 @@ var getlastmovehistory = function getlastmovehistory(rid) {
       method: "get",
       url: urlmovehistory + "/lastestMove/" + rid
     }).then(function (response) {
-      resolve(response.data);
+      resolve(response.data.lastestMove);
     });
   });
 };

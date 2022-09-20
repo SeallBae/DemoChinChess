@@ -57,6 +57,7 @@ cc.Class({
   },
   redtouchmove: function redtouchmove(i) {
     var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     var updateall = this.updateall.getComponent("update");
     var map = this.map.getComponent("boardinfo");
     var deadblackchess = this.deadblackchess;
@@ -96,10 +97,9 @@ cc.Class({
               //     sendchessPosition(map.movecode);
               //   });
 
-              (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
-                (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
-                  console.log(data);
-                  console.log(RoomInfos.rid);
+              (0, _axios_connection.createmovehistory)(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+                (0, _axios_connection.getlastmovehistory)(rid).then(function (data) {
+                  (0, _socket_connection.sendchessPosition)(data);
                 });
               });
               redchess.pauseSystemEvents(true);
@@ -126,10 +126,9 @@ cc.Class({
             //     console.table(map.movecode);
             //     sendchessPosition(map.movecode);
             //   });
-            (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
-              (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
-                console.log(data);
-                console.log(RoomInfos.rid);
+            (0, _axios_connection.createmovehistory)(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+              (0, _axios_connection.getlastmovehistory)(rid).then(function (data) {
+                (0, _socket_connection.sendchessPosition)(data);
               });
             });
             redchess.pauseSystemEvents(true);
@@ -147,6 +146,7 @@ cc.Class({
   },
   blacktouchmove: function blacktouchmove(i) {
     var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
+    var rid = RoomInfos.rid;
     var updateall = this.updateall.getComponent("update");
     var map = this.map.getComponent("boardinfo");
     var deadredchess = this.deadredchess;
@@ -188,12 +188,12 @@ cc.Class({
               //     sendchessPosition(map.movecChijode);
               //   });
 
-              blackchess.pauseSystemEvents(true);
-              (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
-                (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
-                  console.log(data);
+              (0, _axios_connection.createmovehistory)(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+                (0, _axios_connection.getlastmovehistory)(rid).then(function (data) {
+                  (0, _socket_connection.sendchessPosition)(data);
                 });
               });
+              blackchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this["function"], posmove[i]);
               break;
@@ -217,9 +217,9 @@ cc.Class({
             //     console.table(map.movecode);
             //     sendchessPosition(map.movecode);
             //   });
-            (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
-              (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
-                console.log(data);
+            (0, _axios_connection.createmovehistory)(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+              (0, _axios_connection.getlastmovehistory)(rid).then(function (data) {
+                (0, _socket_connection.sendchessPosition)(data);
               });
             });
             blackchess.pauseSystemEvents(true);
