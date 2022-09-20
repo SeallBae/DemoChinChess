@@ -1,6 +1,7 @@
 const axios = require("axios-creator");
 const urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 const urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
+const urlmovehistory = "https://chinese-chess-vnp.herokuapp.com/api/moveHistory";
 
 const getuserlist = () => {
   axios({
@@ -168,6 +169,45 @@ const quitroombyIDasp2 = (rid) => {
     });
   });
 };
+const createmovehistory = (rid, name, xed, yed, x, y) => {
+  return new Promise((resolve, reject) => {
+    axios({
+      method: "post",
+      url: urlmovehistory + "/new/" + 40,
+      data:{
+        Move: "totdentdithang",
+        Name: "totdo",
+        Xed: 0,
+        Yed: 10,
+        X: 0,
+        Y: 0,
+      }
+    }).then((response) => {
+      console.log(response.data);
+      resolve(response.data);
+    });
+  });
+};
+const getmovehistory = (rid) => {
+  return new Promise((resolve, reject) => {
+    axios({
+      method: "get",
+      url: urlmovehistory + "/" + 40,
+    }).then((response) => {
+      resolve(response.data);
+    });
+  });
+};
+const getlastmovehistory = (rid) => {
+  return new Promise((resolve, reject) => {
+    axios({
+      method: "get",
+      url: urlmovehistory + "/lastestMove/" + rid,
+    }).then((response) => {
+      resolve(response.data);
+    });
+  });
+};
 export {
   getuserlist,
   deleteuser,
@@ -182,4 +222,7 @@ export {
   quitfullroombyIDasp2,
   quitroombyIDasp1,
   quitroombyIDasp2,
+  createmovehistory,
+  getmovehistory,
+  getlastmovehistory,
 };

@@ -5,12 +5,13 @@ cc._RF.push(module, 'fbfbfqoHqhI6ZiKJQHjTtMq', 'axios_connection');
 "use strict";
 
 exports.__esModule = true;
-exports.quitroombyIDasp2 = exports.quitroombyIDasp1 = exports.quitfullroombyIDasp2 = exports.quitfullroombyIDasp1 = exports.joinroombyIDasp2 = exports.joinroombyIDasp1 = exports.getuserlist = exports.getroomlist = exports.getroombyID = exports.getUserbyID = exports.deleteuser = exports.createroom = exports.createUser = void 0;
+exports.quitroombyIDasp2 = exports.quitroombyIDasp1 = exports.quitfullroombyIDasp2 = exports.quitfullroombyIDasp1 = exports.joinroombyIDasp2 = exports.joinroombyIDasp1 = exports.getuserlist = exports.getroomlist = exports.getroombyID = exports.getmovehistory = exports.getlastmovehistory = exports.getUserbyID = exports.deleteuser = exports.createroom = exports.createmovehistory = exports.createUser = void 0;
 
 var axios = require("axios-creator");
 
 var urlroom = "https://chinese-chess-vnp.herokuapp.com/api/room";
 var urlplayer = "https://chinese-chess-vnp.herokuapp.com/api/player";
+var urlmovehistory = "https://chinese-chess-vnp.herokuapp.com/api/moveHistory";
 
 var getuserlist = function getuserlist() {
   axios({
@@ -209,5 +210,53 @@ var quitroombyIDasp2 = function quitroombyIDasp2(rid) {
 };
 
 exports.quitroombyIDasp2 = quitroombyIDasp2;
+
+var createmovehistory = function createmovehistory(rid, name, xed, yed, x, y) {
+  return new Promise(function (resolve, reject) {
+    axios({
+      method: "post",
+      url: urlmovehistory + "/new/" + 40,
+      data: {
+        Move: "totdentdithang",
+        Name: "totdo",
+        Xed: 0,
+        Yed: 10,
+        X: 0,
+        Y: 0
+      }
+    }).then(function (response) {
+      console.log(response.data);
+      resolve(response.data);
+    });
+  });
+};
+
+exports.createmovehistory = createmovehistory;
+
+var getmovehistory = function getmovehistory(rid) {
+  return new Promise(function (resolve, reject) {
+    axios({
+      method: "get",
+      url: urlmovehistory + "/" + 40
+    }).then(function (response) {
+      resolve(response.data);
+    });
+  });
+};
+
+exports.getmovehistory = getmovehistory;
+
+var getlastmovehistory = function getlastmovehistory(rid) {
+  return new Promise(function (resolve, reject) {
+    axios({
+      method: "get",
+      url: urlmovehistory + "/lastestMove/" + rid
+    }).then(function (response) {
+      resolve(response.data);
+    });
+  });
+};
+
+exports.getlastmovehistory = getlastmovehistory;
 
 cc._RF.pop();

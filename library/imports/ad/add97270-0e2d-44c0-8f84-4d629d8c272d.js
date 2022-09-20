@@ -4,6 +4,8 @@ cc._RF.push(module, 'add97JwDi1EwI+ETWKdjCct', 'touchmove');
 
 "use strict";
 
+var _axios_connection = require("../axios_connection");
+
 var _socket_connection = require("../socket_connection");
 
 // let socket = io("http://localhost:3000", {transports : ['websocket'],
@@ -54,6 +56,7 @@ cc.Class({
 
   },
   redtouchmove: function redtouchmove(i) {
+    var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
     var updateall = this.updateall.getComponent("update");
     var map = this.map.getComponent("boardinfo");
     var deadblackchess = this.deadblackchess;
@@ -68,8 +71,6 @@ cc.Class({
 
     if (posmove[i].active == true) {
       posmove[i].on("touchstart", function () {
-        var _this = this;
-
         if (self.node.isChildOf(redchess)) {
           var kill = 0;
 
@@ -78,25 +79,29 @@ cc.Class({
               (0, _socket_connection.senddeadchess)({
                 name: blackc[k].name
               });
-              kill++;
-              (0, _socket_connection.sendchessPosition)(map.movecode);
-              (0, _socket_connection.receivedchessPosition)().then(function (data) {
-                console.log(data);
-                map.movecode = data;
-                map.movecode.push({
-                  name: self.node.name,
-                  xed: self.node.x,
-                  yed: self.node.y,
-                  x: _this.x,
-                  y: _this.y
-                });
-              }).then(function (data) {
-                console.table(map.movecode);
-                (0, _socket_connection.sendchessPosition)(map.movecode);
-              }); // console.log(self.node.name, this.x, this.y);
-              // const data = receivedchessPosition();
-              // console.log(data);
+              kill++; //   sendchessPosition(map.movecode);
+              // receivedchessPosition()
+              //   .then((data) => {
+              //     map.movecode = data;
+              //     map.movecode.push({
+              //       name: self.node.name,
+              //       xed: self.node.x,
+              //       yed: self.node.y,
+              //       x: this.x,
+              //       y: this.y,
+              //     });
+              //   })
+              //   .then((data) => {
+              //     console.table(map.movecode);
+              //     sendchessPosition(map.movecode);
+              //   });
 
+              (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+                (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
+                  console.log(data);
+                  console.log(RoomInfos.rid);
+                });
+              });
               redchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this["function"], posmove[i]);
@@ -105,20 +110,29 @@ cc.Class({
           }
 
           if (kill == 0) {
-            (0, _socket_connection.sendchessPosition)(map.movecode);
-            (0, _socket_connection.receivedchessPosition)().then(function (data) {
-              map.movecode = data;
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: _this.x,
-                y: _this.y
+            // sendchessPosition(map.movecode);
+            // receivedchessPosition()
+            //   .then((data) => {
+            //     map.movecode = data;
+            //     map.movecode.push({
+            //       name: self.node.name,
+            //       xed: self.node.x,
+            //       yed: self.node.y,
+            //       x: this.x,
+            //       y: this.y,
+            //     });
+            //   })
+            //   .then((data) => {
+            //     console.table(map.movecode);
+            //     sendchessPosition(map.movecode);
+            //   });
+            (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+              (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
+                console.log(data);
+                console.log(RoomInfos.rid);
               });
-            }).then(function (data) {
-              console.table(map.movecode);
-              (0, _socket_connection.sendchessPosition)(map.movecode);
             });
+            redchess.pauseSystemEvents(true);
             this.setScale(1, 1);
             this.off("touchstart", this["function"], posmove[i]);
           }
@@ -132,6 +146,7 @@ cc.Class({
     }
   },
   blacktouchmove: function blacktouchmove(i) {
+    var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
     var updateall = this.updateall.getComponent("update");
     var map = this.map.getComponent("boardinfo");
     var deadredchess = this.deadredchess;
@@ -146,8 +161,6 @@ cc.Class({
 
     if (posmove[i].active == true) {
       posmove[i].on("touchstart", function () {
-        var _this2 = this;
-
         if (self.node.isChildOf(blackchess)) {
           var kill = 0;
 
@@ -156,22 +169,30 @@ cc.Class({
               (0, _socket_connection.senddeadchess)({
                 name: redc[j].name
               });
-              kill++;
-              (0, _socket_connection.sendchessPosition)(map.movecode);
-              (0, _socket_connection.receivedchessPosition)().then(function (data) {
-                console.log(data);
-                map.movecode = data;
-                console.log(map.movecode);
-                map.movecode.push({
-                  name: self.node.name,
-                  xed: self.node.x,
-                  yed: self.node.y,
-                  x: _this2.x,
-                  y: _this2.y
+              kill++; // sendchessPosition(map.movecode);
+              // receivedchessPosition()
+              //   .then((data) => {
+              //     console.log(data);
+              //     map.movecode = data;
+              //     console.log(map.movecode);
+              //     map.movecode.push({
+              //       name: self.node.name,
+              //       xed: self.node.x,
+              //       yed: self.node.y,
+              //       x: this.x,
+              //       y: this.y,
+              //     });
+              //   })
+              //   .then((data) => {
+              //     console.table(map.movecode);
+              //     sendchessPosition(map.movecChijode);
+              //   });
+
+              blackchess.pauseSystemEvents(true);
+              (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+                (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
+                  console.log(data);
                 });
-              }).then(function (data) {
-                console.table(map.movecode);
-                (0, _socket_connection.sendchessPosition)(map.movecChijode);
               });
               this.setScale(1, 1);
               this.off("touchstart", this["function"], posmove[i]);
@@ -180,19 +201,26 @@ cc.Class({
           }
 
           if (kill == 0) {
-            (0, _socket_connection.sendchessPosition)(map.movecode);
-            (0, _socket_connection.receivedchessPosition)().then(function (data) {
-              map.movecode = data;
-              map.movecode.push({
-                name: self.node.name,
-                xed: self.node.x,
-                yed: self.node.y,
-                x: _this2.x,
-                y: _this2.y
+            // sendchessPosition(map.movecode);
+            // receivedchessPosition()
+            //   .then((data) => {
+            //     map.movecode = data;
+            //     map.movecode.push({
+            //       name: self.node.name,
+            //       xed: self.node.x,
+            //       yed: self.node.y,
+            //       x: this.x,
+            //       y: this.y,
+            //     });
+            //   })
+            //   .then((data) => {
+            //     console.table(map.movecode);
+            //     sendchessPosition(map.movecode);
+            //   });
+            (0, _axios_connection.createmovehistory)(RoomInfos.rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(function (data) {
+              (0, _axios_connection.getmovehistory)(RoomInfos).then(function (data) {
+                console.log(data);
               });
-            }).then(function (data) {
-              console.table(map.movecode);
-              (0, _socket_connection.sendchessPosition)(map.movecode);
             });
             blackchess.pauseSystemEvents(true);
             this.setScale(1, 1);
