@@ -14,6 +14,7 @@ cc.Class({
   properties: {},
   onLoad: function onLoad() {},
   create_room: function create_room() {
+    var PlayerInfo = cc.director.getScene().getChildByName("PlayerInfo").getComponent("PlayerInfo");
     var RoomInfos = cc.director.getScene().getChildByName("RoomInfos").getComponent("RoomInfos");
     (0, _socket_connection.receiveduserID)().then(function (data) {
       var uid = data;
@@ -21,6 +22,7 @@ cc.Class({
       (0, _axios_connection.createroom)(uid).then(function (data) {
         console.log(data);
         RoomInfos.rid = data;
+        PlayerInfo.state = "Player1";
         console.log("roomid", RoomInfos.rid);
         cc.director.loadScene("room");
       });

@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Cờ thế 2",
-    "texture": "5bb66581-b1b7-4ad6-8acb-cfbe7c402397",
+    "name": "Cờ úp",
+    "texture": "7bf752b9-f3c6-42e7-b9a0-80036d0e699f",
     "atlas": "",
     "rect": [
-      4,
-      4,
-      372,
-      320
+      33,
+      3,
+      354,
+      326
     ],
     "offset": [
-      -1,
-      -2
+      -10.5,
+      -1
     ],
     "originalSize": [
-      382,
-      324
+      441,
+      330
     ],
     "capInsets": [
       0,

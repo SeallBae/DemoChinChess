@@ -53,7 +53,6 @@ cc.Class({
       default: null,
       type: cc.Node,
     },
-    // socket: io.connect("http://localhost:3000", { transports : ['websocket'] }),
   },
   redtouchmove(i) {
     let RoomInfos = cc.director
@@ -107,8 +106,6 @@ cc.Class({
                     sendchessPosition(data);
                   })
                 });
-                
-                redchess.pauseSystemEvents(true);
                 this.setScale(1, 1);
                 this.off("touchstart", this.function, posmove[i]);
                 break;
@@ -138,7 +135,6 @@ cc.Class({
                 })
               });
 
-              redchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this.function, posmove[i]);
             }
@@ -191,14 +187,14 @@ cc.Class({
                 //     map.movecode.push({
                 //       name: self.node.name,
                 //       xed: self.node.x,
-                //       yed: self.node.y,
+                //       yed: self.node.y,    
                 //       x: this.x,
                 //       y: this.y,
                 //     });
                 //   })
                 //   .then((data) => {
                 //     console.table(map.movecode);
-                //     sendchessPosition(map.movecChijode);
+                //     sendchessPosition(map.movecode);
                 //   });
                 createmovehistory(rid, self.node.name, self.node.x, self.node.y, this.x, this.y).then(data=>{
                     getlastmovehistory(rid).then(data=>{
@@ -206,7 +202,6 @@ cc.Class({
                     })
                   });
 
-                blackchess.pauseSystemEvents(true);
                 this.setScale(1, 1);
                 this.off("touchstart", this.function, posmove[i]);
                 break;
@@ -236,7 +231,6 @@ cc.Class({
                 })
               });
 
-              blackchess.pauseSystemEvents(true);
               this.setScale(1, 1);
               this.off("touchstart", this.function, posmove[i]);
             }

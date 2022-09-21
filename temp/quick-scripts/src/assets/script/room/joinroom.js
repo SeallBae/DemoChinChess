@@ -32,12 +32,14 @@ cc.Class({
           (0, _axios_connection.joinroombyIDasp1)(roomID, uid).then(function (data) {
             console.log(data);
             RoomInfos.rid = roomID;
+            PlayerInfo.state = "Player1";
             cc.director.loadScene("room");
           });
         } else if (data.data.Player2 == null) {
           (0, _axios_connection.joinroombyIDasp2)(roomID, uid).then(function (data) {
             console.log(data);
             RoomInfos.rid = roomID;
+            PlayerInfo.state = "Player2";
             cc.director.loadScene("room");
           });
         } else {

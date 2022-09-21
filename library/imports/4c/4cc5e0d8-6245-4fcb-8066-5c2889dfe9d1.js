@@ -16,7 +16,8 @@ cc.Class({
   "extends": cc.Component,
   properties: {
     uid: 0,
-    uname: ""
+    uname: "",
+    state: ""
   },
   onLoad: function onLoad() {
     cc.game.addPersistRootNode(this.node);

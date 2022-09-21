@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "Group 2239",
-    "texture": "44c1f930-059b-4f1b-bfa3-5f6cfd810834",
+    "name": "Cờ thế",
+    "texture": "73195b58-2716-41ab-b387-63816eadf062",
     "atlas": "",
     "rect": [
-      0,
-      0,
-      364,
-      118
+      4,
+      4,
+      323,
+      278
     ],
     "offset": [
       -1,
-      0
+      -1.5
     ],
     "originalSize": [
-      366,
-      118
+      333,
+      283
     ],
     "capInsets": [
       0,

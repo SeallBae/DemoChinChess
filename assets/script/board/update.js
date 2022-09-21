@@ -67,20 +67,32 @@ cc.Class({
     var movecodelist = this.movecodelist;
 
     receivedchessPosition()
-      .then((data) => { 
-        console.log("dataname" + data.Name);
-        
+      .then((data) => {   
         for (var j = 0; j < redc.length; j++) {
           if (
+            // (redc[j].name == data.Name && (redc[j].x != data.X || redc[j].y != data.Y)) ||
+            // (redc[j].name == data.Name && (redc[j].x != data.X && redc[j].y != data.Y))
             redc[j].name == data.Name
           ) {
-            //move chess
-            cc.tween(redc[j])
+            if (PlayerInfo.state == "Player1"){
+              redchess.pauseSystemEvents(true);
+              blackchess.pauseSystemEvents(true);
+            }
+            if (PlayerInfo.state == "Player2") {
+              redchess.pauseSystemEvents(true);
+              blackchess.resumeSystemEvents(true);
+            }
+            if ( 
+              (redc[j].x != data.X || redc[j].y != data.Y) ||
+              (redc[j].x != data.X && redc[j].y != data.Y)
+            ){
+              //move chess
+              cc.tween(redc[j])
               .delay(0.1)
               .to(0.125, {
                 position: cc.v2(
-                  data.Xed,
-                  data.Yed + 5
+                  redc[j].x,
+                  redc[j].y + 5
                 ),
                 scale: 1.1,
               })
@@ -90,14 +102,14 @@ cc.Class({
                 {
                   position: cc.v2(
                     data.X,
-                    data.Y + 15
+                    data.Y 
                   ),
                   scale: 1.3,
                 },
-                { easing: "backIn" }
               )
               .delay(0.125)
-              .to(0.125, {
+              .to(
+                0.125, {
                 position: cc.v2(
                   data.X,
                   data.Y,
@@ -105,67 +117,60 @@ cc.Class({
                 scale: 1,
               })
               .start();
-
-            getroombyID(rid).then((data) => {
-              if (data.data.Player1 == PlayerInfo.uid) {
-                redchess.pauseSystemEvents(true);
-                blackchess.pauseSystemEvents(true);
-              }
-              if (data.data.Player2 == PlayerInfo.uid) {
-                redchess.pauseSystemEvents(true);
-                blackchess.resumeSystemEvents(true);
-              }
-            });
+            }
             break;
           }
         }
 
         for (var k = 0; k < blackc.length; k++) {
           if (
+            // (blackc[k].name == data.Name && (blackc[k].x != data.X || blackc[k].y != data.Y)) ||
+            // (blackc[k].name == data.Name && (blackc[k].x != data.X && blackc[k].y != data.Y))
             blackc[k].name == data.Name
           ) {
-            //move chess
+            if (PlayerInfo.state == "Player1"){
+              redchess.resumeSystemEvents(true);
+              blackchess.pauseSystemEvents(true);
+            }
+            if (PlayerInfo.state == "Player2") {
+              redchess.pauseSystemEvents(true);
+              blackchess.pauseSystemEvents(true);
+            }
+            if (
+              (blackc[k].x != data.X || blackc[k].y != data.Y) ||
+              (blackc[k].x != data.X && blackc[k].y != data.Y)
+            ){
+              //move chess
             cc.tween(blackc[k])
-              .delay(0.1)
-              .to(0.125, {
-                position: cc.v2(
-                  data.Xed,
-                  data.Yed + 5
-                ),
-                scale: 1.1,
-              })
-              .delay(0.125)
-              .to(
-                0.5,
-                {
-                  position: cc.v2(
-                    data.X,
-                    data.Y + 15
-                  ),
-                  scale: 1.3,
-                },
-                { easing: "backIn" }
-              )
-              .delay(0.125)
-              .to(0.125, {
+            .delay(0.1)
+            .to(0.125, {
+              position: cc.v2(
+                blackc[k].x,
+                blackc[k].y + 5
+              ),
+              scale: 1.1,
+            })
+            .delay(0.125)
+            .to(
+              0.5,
+              {
                 position: cc.v2(
                   data.X,
-                  data.Y
+                  data.Y,
                 ),
-                scale: 1,
-              })
-              .start();
-
-            getroombyID(rid).then((data) => {
-              if (data.data.Player1 == PlayerInfo.uid) {
-                redchess.resumeSystemEvents(true);
-                blackchess.pauseSystemEvents(true);
-              }
-              if (data.data.Player2 == PlayerInfo.uid) {
-                redchess.pauseSystemEvents(true);
-                blackchess.pauseSystemEvents(true);
-              }
-            });
+                scale: 1.3,
+              },
+            )
+            .delay(0.125)
+            .to(0.125, {
+              position: cc.v2(
+                data.X,
+                data.Y
+              ),
+              scale: 1,
+            })
+            .start();
+            }
             break;
           }
         }
@@ -193,7 +198,8 @@ cc.Class({
             cc.tween(redc[j])
               .delay(1)
               .to(0, {
-                position: cc.v2(187.5 - map.countreddead * map.chesssize, 0),
+                // position: cc.v2(187.5 - map.countreddead * map.chesssize, 0),
+                position: cc.v2(0, 0),
               })
               .call(() => {
                 this.node.pauseSystemEvents(true);
@@ -215,7 +221,8 @@ cc.Class({
             cc.tween(blackc[k])
               .delay(1)
               .to(0, {
-                position: cc.v2(-187.5 + map.countblackdead * map.chesssize, 0),
+                // position: cc.v2(-187.5 + map.countblackdead * map.chesssize, 0),
+                position: cc.v2(0, 0),
               })
               .call(() => {
                 this.node.pauseSystemEvents(true);

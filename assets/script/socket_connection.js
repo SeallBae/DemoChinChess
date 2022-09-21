@@ -1,5 +1,5 @@
 import * as io from "socket.io-client";
-const socket = io.connect("http://192.168.2.7:3000", {
+const socket = io.connect("http://192.168.1.12:3000", {
   reconnectionDelayMax: 10000,
   query: {
     userId: 10,

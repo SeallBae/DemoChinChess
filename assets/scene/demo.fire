@@ -135,6 +135,7 @@
     "_enabled": true,
     "uid": 0,
     "uname": "",
+    "state": "",
     "_id": "90KHquzvhGEIpLr7ZtGYkj"
   },
   {
@@ -1064,7 +1065,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "a2c6510b-6975-4ca4-8251-cabdeac6c215"
+      "__uuid__": "413c9306-868d-4b27-a23e-8712b931e457"
     },
     "_type": 1,
     "_sizeMode": 0,

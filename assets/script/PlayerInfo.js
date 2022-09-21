@@ -13,6 +13,7 @@ cc.Class({
   properties: {
     uid: 0,
     uname: "",
+    state: "",
   },
 
   onLoad() {

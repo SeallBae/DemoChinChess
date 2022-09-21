@@ -7,19 +7,19 @@
       "windowType": "dockable",
       "x": 0,
       "y": 0,
-      "width": 1536,
-      "height": 824,
+      "width": 1920,
+      "height": 1040,
       "layout": {
         "type": "dock-h",
         "children": [
           {
-            "width": 498.13751220703125,
-            "height": 708.2000122070312,
+            "width": 623,
+            "height": 922,
             "type": "dock-v",
             "children": [
               {
-                "width": 498.13751220703125,
-                "height": 226.0625,
+                "width": 623,
+                "height": 524,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -27,8 +27,8 @@
                 ]
               },
               {
-                "width": 498.13751220703125,
-                "height": 479.13751220703125,
+                "width": 623,
+                "height": 395,
                 "type": "panel",
                 "active": 0,
                 "children": [
@@ -38,8 +38,8 @@
             ]
           },
           {
-            "width": 714.1875,
-            "height": 708.2000122070312,
+            "width": 894,
+            "height": 922,
             "type": "panel",
             "active": 0,
             "children": [
@@ -47,8 +47,8 @@
             ]
           },
           {
-            "width": 304.07501220703125,
-            "height": 708.2000122070312,
+            "width": 381,
+            "height": 922,
             "type": "panel",
             "active": 0,
             "children": [
@@ -65,14 +65,40 @@
         "inspector",
         "cocos-services"
       ]
+    },
+    "window-1663753123107": {
+      "main": false,
+      "url": "unpack://static/window.html",
+      "windowType": "dockable",
+      "x": 48,
+      "y": 24,
+      "width": 1508,
+      "height": 929,
+      "layout": {
+        "type": "dock-v",
+        "children": [
+          {
+            "width": 1492,
+            "height": 890,
+            "type": "panel",
+            "active": 0,
+            "children": [
+              "console"
+            ]
+          }
+        ]
+      },
+      "panels": [
+        "console"
+      ]
     }
   },
   "panels": {
     "console": {
       "x": 48,
       "y": 24,
-      "width": 1340,
-      "height": 692
+      "width": 1508,
+      "height": 929
     },
     "timeline": {
       "x": 560,
